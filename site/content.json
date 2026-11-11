@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "title": "",
+    "subtitle": ""
+  },
+  "pages": [
+    {
+      "id": "profile",
+      "label": "Profile",
+      "entries": [
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "game",
+      "label": "Game",
+      "entries": [
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "portfolio",
+      "label": "Portfolio",
+      "entries": [
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        },
+        {
+          "title": "",
+          "body": "",
+          "image": "",
+          "buttonLabel": "",
+          "buttonUrl": ""
+        }
+      ]
+    }
+  ]
+}
