@@ -5,68 +5,102 @@
     "role": "게임 기획자",
     "headline": "하나의 재미를 위해 백 번의 고민을 담는다",
     "heroDescription": "좋아하는 마음에서, 이해하는 시선으로.\n게임의 재미를 구조로 풀어내는 신입 게임 기획자 송문열입니다.",
-    "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85",
-    "portrait": "",
+    "heroImage": "/PR_Portfolio/assets/media/a42ef2137ccbcfb15d853685.webp",
+    "portrait": "/PR_Portfolio/assets/media/c18e6418eecd9bad41fa3192.webp",
     "introTitle": "“왜 재미있을까?”라는 질문에서 시작합니다.",
     "introduction": "플레이어가 다시 게임을 켜는 이유를 고민합니다.\n캐릭터를 수집하고 성장시키는 과정에서 느끼는 성취감, 전투에서 선택이 만드는 차이를 관찰하고 기획의 언어로 정리합니다.\n\n작은 불편함도 놓치지 않는 관찰력과 끝까지 구조를 파고드는 태도로, 함께 더 좋은 플레이 경험을 만들고 싶습니다.",
-    "birth": "비공개",
-    "phone": "비공개",
-    "email": "비공개",
-    "education": "비공개",
+    "birth": "1994.10.02",
+    "phone": "010-8631-3847",
+    "email": "smy10021@gmail.com",
+    "education": "목원대학교 / 시각디자인학과",
     "specialties": "시스템 기획 / 콘텐츠 기획"
   },
   "tools": [
     {
       "name": "Excel",
       "purpose": "기획서 작성 / 테이블 제작",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/cf4455a4198b475ec58c54c7.webp"
     },
     {
       "name": "PowerPoint",
       "purpose": "기획서 작성",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/593c71861a05fbb156984c86.webp"
     },
     {
       "name": "Word",
       "purpose": "기획서 작성",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/d024bb74b2fcff88ed92e899.webp"
     },
     {
       "name": "Notion",
       "purpose": "자료 아카이빙 / 일정 관리",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/4bea8b82eebb6fb2bd7c6095.webp"
     },
     {
       "name": "Figma",
       "purpose": "기획서 작성 / UI·UX 설계 / 프로토타이핑",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/b62dffcf666413db312b3c54.webp"
     },
     {
       "name": "Photoshop",
       "purpose": "이미지 편집 및 디자인",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/1f725ecda3077f79d03ca448.webp"
     },
     {
       "name": "Illustrator",
       "purpose": "기획서 작성 / 이미지 편집 및 디자인",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/e41f981a2f1bd69b613f45f2.webp"
     },
     {
       "name": "ChatGPT",
       "purpose": "기획서 내용 검수 / 자료 리서칭 및 분석 / 이미지 제작 / 게임 제작 등",
-      "logo": ""
+      "logo": "/PR_Portfolio/assets/media/c8f92b137269eacafc3970de.webp"
     }
   ],
-  "licenses": [],
-  "careers": [],
+  "licenses": [
+    {
+      "name": "정보기술자격(ITQ)_MS워드 ",
+      "grade": "A등급",
+      "date": "2026.04.02",
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf"
+    },
+    {
+      "name": "정보기술자격(ITQ)_MS워드 ",
+      "grade": "A등급",
+      "date": "2026.04.02",
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf"
+    },
+    {
+      "name": "정보기술자격(ITQ)_MS워드 ",
+      "grade": "A등급",
+      "date": "2026.04.02",
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf"
+    }
+  ],
+  "careers": [
+    {
+      "company": "(주)라이징크래프트",
+      "position": "대리",
+      "period": "2020.06~2024.05",
+      "roles": "▹콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n▹레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n▹캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n▹몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n▹시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n▹리소스 기획: 나레이션 및 캐릭터 대사 기획\n▹마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행",
+      "image": "/PR_Portfolio/assets/media/a79957ede905f8a4a44a6074.webp"
+    }
+  ],
   "projects": [
     {
       "title": "코딩나이츠 AR",
       "description": "코딩나이츠 AR은 증강현실(AR) 기술과 팝업북을 결합한 유아·초등학생 대상 코딩 교육 콘텐츠로 프로그래밍의 기본 원리와 알고리즘을 쉽게 학습할 수 있는 모바일 앱",
+      "image": "/PR_Portfolio/assets/media/1474b52b542cf581bad38fbe.webp"
+    }
+  ],
+  "awards": [
+    {
+      "title": "수상 이력을 등록해 주세요",
+      "organization": "기관명 입력 예정",
+      "date": "수상 일자 입력 예정",
       "image": ""
     }
   ],
-  "awards": [],
   "game": {
     "title": "플레이를 쌓고, 재미를 읽습니다.",
     "description": "다양한 장르의 경험을 모바일 수집형 RPG를 이해하는 시선으로 연결합니다.",
@@ -81,22 +115,22 @@
         {
           "name": "승리의 여신: 니케",
           "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "에픽세븐",
           "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "블루 아카이브",
           "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "붕괴: 스타레일",
           "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
         }
       ]
     },
@@ -106,17 +140,17 @@
         {
           "name": "원신",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "명조: 워더링 웨이브",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "몬스터 헌터",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
         }
       ]
     },
@@ -126,17 +160,17 @@
         {
           "name": "전략적 팀 전투",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "슬레이 더 스파이어",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
         },
         {
           "name": "문명 VI",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": ""
+          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
         }
       ]
     }
