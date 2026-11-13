@@ -1,0 +1,7 @@
+node_modules/
+.next/
+test-results/
+data/
+.static-build/
+.static-build-public/
+deployment-repo/

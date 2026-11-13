@@ -1,0 +1,187 @@
+{
+  "profile": {
+    "name": "송문열",
+    "englishName": "SONG MUN YEOL",
+    "role": "게임 기획자",
+    "headline": "하나의 재미를 위해 백 번의 고민을 담는다",
+    "heroDescription": "좋아하는 마음에서, 이해하는 시선으로.\n게임의 재미를 구조로 풀어내는 신입 게임 기획자 송문열입니다.",
+    "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85",
+    "portrait": "",
+    "introTitle": "“왜 재미있을까?”라는 질문에서 시작합니다.",
+    "introduction": "플레이어가 다시 게임을 켜는 이유를 고민합니다.\n캐릭터를 수집하고 성장시키는 과정에서 느끼는 성취감, 전투에서 선택이 만드는 차이를 관찰하고 기획의 언어로 정리합니다.\n\n작은 불편함도 놓치지 않는 관찰력과 끝까지 구조를 파고드는 태도로, 함께 더 좋은 플레이 경험을 만들고 싶습니다.",
+    "birth": "비공개",
+    "phone": "비공개",
+    "email": "비공개",
+    "education": "비공개",
+    "specialties": "시스템 기획 / 콘텐츠 기획"
+  },
+  "tools": [
+    {
+      "name": "Excel",
+      "purpose": "기획서 작성 / 테이블 제작",
+      "logo": ""
+    },
+    {
+      "name": "PowerPoint",
+      "purpose": "기획서 작성",
+      "logo": ""
+    },
+    {
+      "name": "Word",
+      "purpose": "기획서 작성",
+      "logo": ""
+    },
+    {
+      "name": "Notion",
+      "purpose": "자료 아카이빙 / 일정 관리",
+      "logo": ""
+    },
+    {
+      "name": "Figma",
+      "purpose": "기획서 작성 / UI·UX 설계 / 프로토타이핑",
+      "logo": ""
+    },
+    {
+      "name": "Photoshop",
+      "purpose": "이미지 편집 및 디자인",
+      "logo": ""
+    },
+    {
+      "name": "Illustrator",
+      "purpose": "기획서 작성 / 이미지 편집 및 디자인",
+      "logo": ""
+    },
+    {
+      "name": "ChatGPT",
+      "purpose": "기획서 내용 검수 / 자료 리서칭 및 분석 / 이미지 제작 / 게임 제작 등",
+      "logo": ""
+    }
+  ],
+  "licenses": [],
+  "careers": [],
+  "projects": [
+    {
+      "title": "코딩나이츠 AR",
+      "description": "코딩나이츠 AR은 증강현실(AR) 기술과 팝업북을 결합한 유아·초등학생 대상 코딩 교육 콘텐츠로 프로그래밍의 기본 원리와 알고리즘을 쉽게 학습할 수 있는 모바일 앱",
+      "image": ""
+    }
+  ],
+  "awards": [],
+  "game": {
+    "title": "플레이를 쌓고, 재미를 읽습니다.",
+    "description": "다양한 장르의 경험을 모바일 수집형 RPG를 이해하는 시선으로 연결합니다.",
+    "specialty": "모바일 수집형 RPG",
+    "specialtyTitle": "수집의 기대감부터, 성장의 성취감까지.",
+    "specialtyDescription": "캐릭터의 매력, 육성 동선, 전투의 조합, 라이브 운영이 어떻게 하나의 경험을 이루는지 살펴봅니다."
+  },
+  "genres": [
+    {
+      "name": "수집형 RPG",
+      "games": [
+        {
+          "name": "승리의 여신: 니케",
+          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "에픽세븐",
+          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "블루 아카이브",
+          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "붕괴: 스타레일",
+          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "액션 RPG",
+      "games": [
+        {
+          "name": "원신",
+          "description": "게임별 플레이 기록을 입력해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "명조: 워더링 웨이브",
+          "description": "게임별 플레이 기록을 입력해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "몬스터 헌터",
+          "description": "게임별 플레이 기록을 입력해 주세요.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "전략 · 기타",
+      "games": [
+        {
+          "name": "전략적 팀 전투",
+          "description": "게임별 플레이 기록을 입력해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "슬레이 더 스파이어",
+          "description": "게임별 플레이 기록을 입력해 주세요.",
+          "image": ""
+        },
+        {
+          "name": "문명 VI",
+          "description": "게임별 플레이 기록을 입력해 주세요.",
+          "image": ""
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "title": "관찰하기",
+      "question": "언제 즐겁고, 어디에서 멈추는가?",
+      "description": "플레이 흐름과 선택의 순간을 기록합니다."
+    },
+    {
+      "title": "분석하기",
+      "question": "어떤 구조가 이 경험을 만드는가?",
+      "description": "성장 곡선, 보상 주기, 시스템 간 연결을 정리합니다."
+    },
+    {
+      "title": "제안하기",
+      "question": "어떻게 더 좋은 경험을 만들까?",
+      "description": "문제의 원인과 개선 가설을 기획서로 구체화합니다."
+    }
+  ],
+  "documents": [
+    {
+      "game": "수집형 RPG",
+      "title": "성장의 다음 목표를 만드는 캐릭터 육성 시스템",
+      "type": "시스템 기획",
+      "format": "PDF",
+      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80",
+      "file": ""
+    },
+    {
+      "game": "수집형 RPG",
+      "title": "선택의 재미를 확장하는 시즌 던전",
+      "type": "콘텐츠 기획",
+      "format": "PDF",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80",
+      "file": ""
+    },
+    {
+      "game": "수집형 RPG",
+      "title": "전투 역할에 따른 캐릭터 스탯 테이블",
+      "type": "밸런스 기획",
+      "format": "XLSX",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80",
+      "file": ""
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+import {promises as fs} from 'node:fs';
+import path from 'node:path';
+import {dataDir,localRequest} from '../../../lib/content-store';
+export async function POST(request){
+ if(!localRequest(request))return Response.json({error:'파일 등록은 로컬 주소에서만 가능합니다.'},{status:403});
+ try{const form=await request.formData();const file=form.get('file');if(!file||typeof file.arrayBuffer!=='function')return Response.json({error:'파일을 선택해 주세요.'},{status:400});if(file.size>15*1024*1024)return Response.json({error:'15MB 이하 파일을 선택해 주세요.'},{status:413});const ext=path.extname(file.name).toLowerCase();if(!['.png','.jpg','.jpeg','.webp','.gif','.pdf','.xlsx'].includes(ext))return Response.json({error:'PNG, JPG, WEBP, GIF, PDF, XLSX 파일만 등록할 수 있습니다.'},{status:400});const bytes=Buffer.from(await file.arrayBuffer());const signatures={'.png':bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'.jpg':bytes[0]===255&&bytes[1]===216,'.jpeg':bytes[0]===255&&bytes[1]===216,'.webp':bytes.toString('ascii',0,4)==='RIFF'&&bytes.toString('ascii',8,12)==='WEBP','.gif':bytes.toString('ascii',0,3)==='GIF','.pdf':bytes.toString('ascii',0,5)==='%PDF-','.xlsx':bytes[0]===80&&bytes[1]===75};if(!signatures[ext])return Response.json({error:'파일 형식과 확장자가 일치하지 않습니다.'},{status:400});const name=crypto.randomUUID()+ext;await fs.mkdir(path.join(dataDir,'uploads'),{recursive:true});await fs.writeFile(path.join(dataDir,'uploads',name),bytes);return Response.json({url:'/api/media/'+name,name:file.name})}catch{return Response.json({error:'파일 등록에 실패했습니다.'},{status:500})}
+}
