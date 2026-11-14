@@ -8,6 +8,7 @@ export function localRequest(request){
 }
 export function validateContent(data){
  if(!data||typeof data!=='object'||Array.isArray(data))return false;
- function check(value,model,depth=0){if(depth>10)return false;if(typeof model==='string')return typeof value==='string'&&value.length<100000;if(Array.isArray(model))return Array.isArray(value)&&value.length<=100&&value.every(v=>check(v,model[0],depth+1));return value&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(model).every(k=>Object.hasOwn(value,k)&&check(value[k],model[k],depth+1))&&Object.keys(value).every(k=>Object.hasOwn(model,k))}
+ function check(value,model,depth=0){if(depth>10)return false;if(typeof model==='string')return typeof value==='string'&&value.length<100000;if(Array.isArray(model))return Array.isArray(value)&&value.length<=100&&value.every(v=>check(v,model[0],depth+1));return value&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(model).every(k=>(k==='image'&&Object.hasOwn(model,'grade')&&!Object.hasOwn(value,k))||(Object.hasOwn(value,k)&&check(value[k],model[k],depth+1)))&&Object.keys(value).every(k=>Object.hasOwn(model,k))}
  return check(data,defaultContent)&&data.documents.every(d=>['PDF','XLSX'].includes(d.format)&&['시스템 기획','콘텐츠 기획','밸런스 기획'].includes(d.type));
 }
+
