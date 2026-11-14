@@ -5,7 +5,7 @@ import {defaultContent} from './content-defaults';
 import {staticMode,readStaticDraft} from './static-storage';
 import Screens from './screens';
 import {fileFormat} from './file-format';
-const menus={profile:['소개','프로필','보유 스킬','자격증','경력 · 프로젝트','수상 경력'],game:['플레이 기록','주력 장르','플레이 관점'],portfolio:['전체 문서','시스템 기획']};
+const menus={profile:['소개','프로필','보유 스킬','자격증','경력 · 프로젝트','수상 경력'],game:['주력 장르','서브 장르'],portfolio:['전체 문서','시스템 기획']};
 const paths={pad:'M7 7h10l3 2 2 8-3 2-4-3H9l-4 3-3-2 2-8 3-2Zm0 3v5m-2-2h4m7-1h.01m3 2h.01',profile:'M12 3 4 7v10l8 4 8-4V7l-8-4Zm0 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 11c0-5 10-5 10 0',game:'m5 3 14 14-2 2L3 5l2-2Zm10 0 4 2L5 19l-2-2L17 3ZM3 13l8 8m2-18 8 8',portfolio:'M5 4h11l3 3v13H5V4Zm9 0v5h5M8 12h8m-8 4h6',skill:'m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6',award:'M8 3h8v6a4 4 0 0 1-8 0V3Zm0 2H3v3a5 5 0 0 0 6 4m7-7h5v3a5 5 0 0 1-6 4m-3 1v7m-5 1h10',gem:'m12 2 9 10-9 10-9-10L12 2Zm-9 10h18M12 2l4 10-4 10-4-10 4-10'};
 function Icon({name='gem',className=''}){return <svg className={'icon '+className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]||paths.gem}/></svg>}
 function Image({src,alt='',className=''}){const [failed,setFailed]=useState(false);useEffect(()=>setFailed(false),[src]);return safeUrl(src)&&!failed?<img className={className} src={safeUrl(src)} alt={alt} onError={()=>setFailed(true)}/>:<div className={'image-placeholder '+className} role="img" aria-label={alt||'이미지 등록 영역'}><Icon/><span>{alt||'IMAGE'}</span></div>}
@@ -42,5 +42,6 @@ export default function Portfolio({initialContent}){
  <footer className="hud-footer"><span>{p.englishName} <b>GAME DESIGNER</b></span><small>© {new Date().getFullYear()} {p.englishName}</small>{local&&<button aria-label="내용 · 이미지 편집" className={'edit-launcher'+(dirty?' has-draft':'')} onClick={openEditor}><Icon name="portfolio"/><span>{dirty?'편집 중 · 저장 전':'내용 · 이미지 편집'}</span><b>↗</b></button>}</footer>
  {editing&&<Editor content={content} onChange={setContent} onClose={closeEditor} onSaved={didSave} onDiscard={discard} dirty={dirty} setDirty={setDirty}/>}{toast&&<div className="toast" role="status">{toast}</div>}</div>
 }
+
 
 
