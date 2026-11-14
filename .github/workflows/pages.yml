@@ -18,10 +18,24 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: next-source/pnpm-lock.yaml
+      - name: Install Next.js dependencies
+        working-directory: next-source
+        run: pnpm install --frozen-lockfile
+      - name: Build published content
+        working-directory: next-source
+        run: node scripts/build-static.cjs content.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: site
+          path: next-source/.static-build/out
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
