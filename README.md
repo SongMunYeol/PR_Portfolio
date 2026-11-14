@@ -2,7 +2,7 @@
 
 공개 주소: **https://songmunyeol.github.io/PR_Portfolio/**
 
-Next.js로 만든 포트폴리오를 정적 HTML/CSS/JavaScript로 내보내 GitHub Pages에서 제공합니다. 방문자는 Node.js, 로컬 서버, 제작자의 PC 없이 접속할 수 있습니다. Profile / Game Experience / Portfolio 탭, 하위 메뉴, 캐러셀을 지원합니다.
+Next.js로 만든 포트폴리오를 정적 HTML/CSS/JavaScript로 내보내 GitHub Pages에서 제공합니다. 방문자는 Node.js, 로컬 서버, 제작자의 PC 없이 접속할 수 있습니다. Profile / Game Experience / Portfolio 상단 탭과 좌측 하위 탭으로 고정 화면 안에서 전환합니다. 페이지 스크롤 없이 도구·자격증·게임·기획서를 좌우 버튼으로 넘겨 볼 수 있습니다. 화이트·옅은 그레이와 노란색을 사용하며, 편집 버튼과 기존 저장 내용·이미지·첨부 자료를 유지합니다.
 
 사용자의 전체 공개 이식 승인에 따라 이전에 저장한 소개, 개인정보, 사진, 경력 및 증빙 첨부 자료를 공개본에 반영했습니다. 제작 컴퓨터의 원본도 그대로 보존됩니다.
 
@@ -17,5 +17,6 @@ Next.js로 만든 포트폴리오를 정적 HTML/CSS/JavaScript로 내보내 Git
 Next.js 원본은 `next-source/`에 있습니다. Node.js 20.9 이상에서 해당 폴더로 이동해 의존성을 설치하고 `npm run build:pages`로 빌드합니다. `data/content.json`이 없으면 `content.json`을 사용합니다. 새 백업 파일을 반영할 때는 `node scripts/build-static.cjs /path/to/backup.json`을 실행합니다. GitHub Actions가 main 변경 시 `next-source/content.json`으로 Next.js 정적 빌드를 실행하고 배포합니다. 기존 `site/assets/media/`는 콘텐츠가 참조하는 이미지·파일 원본이므로 보존하세요.
 
 GitHub Pages 배포본은 서버 API를 사용하지 않습니다. 로컬 API 편집 기능은 원본에 남아 있습니다. PC를 끄거나 로컬 서버를 종료해도 공개 주소는 유지됩니다. 기존 공개 버전은 Git 커밋 기록에 보존됩니다.
+
 
 

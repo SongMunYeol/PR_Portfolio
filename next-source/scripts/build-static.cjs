@@ -18,7 +18,7 @@ async function main(){
   if(Array.isArray(value))return Promise.all(value.map(walk));
   if(value&&typeof value==='object')return Object.fromEntries(await Promise.all(Object.entries(value).map(async([k,v])=>[k,await walk(v)])));
   if(typeof value!=='string')return value;
-  if(value.startsWith(base+'/assets/media/')){const name=path.basename(value);const candidates=[path.join(root,'public','assets','media',name),path.join(root,'..','site','assets','media',name)];let found=false;for(const candidate of candidates){try{await fs.copyFile(candidate,path.join(stage,'public','assets','media',name));found=true;break}catch{}}if(!found)throw Error('Published attachment missing: '+name);return value;}
+  if(value.startsWith(base+'/assets/media/')){const name=path.basename(value);const candidates=[path.join(root,'public','assets','media',name),path.join(root,'..','site','assets','media',name),path.join(root,'deployment-repo','site','assets','media',name)];let found=false;for(const candidate of candidates){try{await fs.copyFile(candidate,path.join(stage,'public','assets','media',name));found=true;break}catch{}}if(!found)throw Error('Published attachment missing: '+name);return value;}
   if(!value.startsWith('/api/media/')&&!value.startsWith('data:'))return value;
   if(copied.has(value))return copied.get(value);
   let bytes,extension;
@@ -38,3 +38,4 @@ async function main(){
  console.log('Static export ready: '+path.join(stage,'out'));
 }
 main().catch(e=>{console.error(e);process.exit(1)});
+
