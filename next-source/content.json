@@ -3,12 +3,12 @@
     "name": "송문열",
     "englishName": "SONG MUN YEOL",
     "role": "게임 기획자",
-    "headline": "하나의 재미를 위해 백 번의 고민을 담는다",
-    "heroDescription": "좋아하는 마음에서, 이해하는 시선으로.\n게임의 재미를 구조로 풀어내는 신입 게임 기획자 송문열입니다.",
-    "heroImage": "/PR_Portfolio/assets/media/a42ef2137ccbcfb15d853685.webp",
+    "headline": "재미의 조합을 분석하고, \n시너지를 설계하는 게임 기획자\n송문열입니다.",
+    "heroDescription": "익숙한 게임 시스템 속 추가 개선 방향을 탐구하여,\n더 발전된 플레이 경험을 논리적인 구조로 구체화합니다.",
+    "heroImage": "/PR_Portfolio/assets/media/132ad8cef63868f34c235aee.jpg",
     "portrait": "/PR_Portfolio/assets/media/c18e6418eecd9bad41fa3192.webp",
-    "introTitle": "“왜 재미있을까?”라는 질문에서 시작합니다.",
-    "introduction": "플레이어가 다시 게임을 켜는 이유를 고민합니다.\n캐릭터를 수집하고 성장시키는 과정에서 느끼는 성취감, 전투에서 선택이 만드는 차이를 관찰하고 기획의 언어로 정리합니다.\n\n작은 불편함도 놓치지 않는 관찰력과 끝까지 구조를 파고드는 태도로, 함께 더 좋은 플레이 경험을 만들고 싶습니다.",
+    "introTitle": "재미의 원리를 탐구하고, 경험을 더 나은 설계로 연결합니다.",
+    "introduction": "다양한 장르의 게임을 깊이 경험하며 플레이어의 선택과 재미를 만드는 시스템에 관심을 가져왔습니다.\n\n광고·마케팅 기획에서는 타깃의 요구를 분석하고 아이디어를 설득력 있는 제안으로 구체화하여 공모전 수상이라는 성과를 거두었습니다.\n\n또한 TRPG 마스터 활동과 게임 시스템 기획서 제작을 통해 아이디어를 실제로 작동하는 규칙과 데이터로 설계하는 역량을 발전시켜 왔습니다.\n\n최근에는 생성형 AI와 Dify를 활용한 게임기획 보조 도구를 개발하며 반복적인 검토 업무를 개선하고 기획 프로세스를 효율화하는 방법까지 탐구하고 있습니다.\n\n다양한 경험을 바탕으로 재미의 이유를 분석하고, 그 가치를 플레이어에게 전달할 수 있는 게임 기획자를 지향합니다.",
     "birth": "1994.10.02",
     "phone": "010-8631-3847",
     "email": "smy10021@gmail.com",
@@ -32,16 +32,6 @@
       "logo": "/PR_Portfolio/assets/media/d024bb74b2fcff88ed92e899.webp"
     },
     {
-      "name": "Notion",
-      "purpose": "자료 아카이빙 / 일정 관리",
-      "logo": "/PR_Portfolio/assets/media/4bea8b82eebb6fb2bd7c6095.webp"
-    },
-    {
-      "name": "Figma",
-      "purpose": "기획서 작성 / UI·UX 설계 / 프로토타이핑",
-      "logo": "/PR_Portfolio/assets/media/b62dffcf666413db312b3c54.webp"
-    },
-    {
       "name": "Photoshop",
       "purpose": "이미지 편집 및 디자인",
       "logo": "/PR_Portfolio/assets/media/1f725ecda3077f79d03ca448.webp"
@@ -55,6 +45,16 @@
       "name": "ChatGPT",
       "purpose": "기획서 내용 검수 / 자료 리서칭 및 분석 / 이미지 제작 / 게임 제작 등",
       "logo": "/PR_Portfolio/assets/media/c8f92b137269eacafc3970de.webp"
+    },
+    {
+      "name": "Notion",
+      "purpose": "자료 아카이빙 / 일정 관리",
+      "logo": "/PR_Portfolio/assets/media/4bea8b82eebb6fb2bd7c6095.webp"
+    },
+    {
+      "name": "Figma",
+      "purpose": "기획서 작성 / UI·UX 설계 / 프로토타이핑",
+      "logo": "/PR_Portfolio/assets/media/b62dffcf666413db312b3c54.webp"
     }
   ],
   "licenses": [
@@ -62,27 +62,30 @@
       "name": "정보기술자격(ITQ)_MS워드 ",
       "grade": "A등급",
       "date": "2026.04.02",
-      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf"
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
+      "image": "/PR_Portfolio/assets/media/1e6a3859f3b03eb1077a4aad.png"
     },
     {
       "name": "정보기술자격(ITQ)_MS워드 ",
       "grade": "A등급",
       "date": "2026.04.02",
-      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf"
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
+      "image": "/PR_Portfolio/assets/media/1e6a3859f3b03eb1077a4aad.png"
     },
     {
       "name": "정보기술자격(ITQ)_MS워드 ",
       "grade": "A등급",
       "date": "2026.04.02",
-      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf"
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
+      "image": "/PR_Portfolio/assets/media/1e6a3859f3b03eb1077a4aad.png"
     }
   ],
   "careers": [
     {
-      "company": "(주)라이징크래프트",
+      "company": "(주)라이징크래프트 입사",
       "position": "대리",
       "period": "2020.06~2024.05",
-      "roles": "▹콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n▹레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n▹캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n▹몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n▹시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n▹리소스 기획: 나레이션 및 캐릭터 대사 기획\n▹마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행",
+      "roles": "콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n리소스 기획: 나레이션 및 캐릭터 대사 기획\n마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행",
       "image": "/PR_Portfolio/assets/media/a79957ede905f8a4a44a6074.webp"
     }
   ],
@@ -95,10 +98,10 @@
   ],
   "awards": [
     {
-      "title": "수상 이력을 등록해 주세요",
-      "organization": "기관명 입력 예정",
-      "date": "수상 일자 입력 예정",
-      "image": ""
+      "title": "ASIA STUDENT PACKAGE DESIGN COMPETITION 2017 금상 수상",
+      "organization": "ASPAC",
+      "date": "2017.12.03",
+      "image": "/PR_Portfolio/assets/media/1e5736340b5a4785b91b98d3.jpg"
     }
   ],
   "game": {
@@ -113,24 +116,134 @@
       "name": "수집형 RPG",
       "games": [
         {
-          "name": "승리의 여신: 니케",
-          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
-        },
-        {
-          "name": "에픽세븐",
-          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
+          "name": "쿠키런 킹덤",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/64260b2bf52e736865491a36.jpg"
         },
         {
           "name": "블루 아카이브",
-          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/07dd10a4d085030d428c3aa8.jpg"
         },
         {
-          "name": "붕괴: 스타레일",
-          "description": "게임별 플레이 기간, 달성 기록, 관찰한 시스템을 기록해 주세요.",
-          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
+          "name": "승리의 여신: 니케",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/e8e7e8035890985863bcef03.jpg"
+        },
+        {
+          "name": "브라운더스트2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/66041563ef4077651e144d7f.jpg"
+        },
+        {
+          "name": "",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": ""
         }
       ]
     },
@@ -194,28 +307,52 @@
   ],
   "documents": [
     {
-      "game": "수집형 RPG",
-      "title": "성장의 다음 목표를 만드는 캐릭터 육성 시스템",
+      "game": "쿠키런 킹덤",
+      "title": "06_창작_시스템_쿠키런킹덤_아이템연금",
+      "type": "시스템 기획",
+      "format": "XLSX",
+      "image": "/PR_Portfolio/assets/media/3f49556de24f8c649d32f262.png",
+      "file": "/PR_Portfolio/assets/media/7d16ed595501cb060874441c.xlsx"
+    },
+    {
+      "game": "브라운더스트2",
+      "title": "05_창작_시스템_브라운더스트2_몬스터강화",
+      "type": "시스템 기획",
+      "format": "XLSX",
+      "image": "/PR_Portfolio/assets/media/e5486de97f5e32b7ddf04490.png",
+      "file": "/PR_Portfolio/assets/media/28d1bae67a8ed884353d477b.xlsx"
+    },
+    {
+      "game": "나 혼자만 레벨업: 어라이즈",
+      "title": "04_창작_시스템_나혼자만레벨업_조사의뢰",
       "type": "시스템 기획",
       "format": "PDF",
-      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80",
-      "file": ""
+      "image": "/PR_Portfolio/assets/media/9f32ee8c55b83fd631f0c10a.png",
+      "file": "/PR_Portfolio/assets/media/73dcbe708364085c381c5ef2.pdf"
     },
     {
-      "game": "수집형 RPG",
-      "title": "선택의 재미를 확장하는 시즌 던전",
-      "type": "콘텐츠 기획",
+      "game": "몬길: STAR DIVE",
+      "title": "03_창작_시스템_몬길_인연시스템",
+      "type": "시스템 기획",
       "format": "PDF",
-      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80",
-      "file": ""
+      "image": "/PR_Portfolio/assets/media/842ee7b713d1d7f464f8871b.png",
+      "file": "/PR_Portfolio/assets/media/c1e28e995f042afee5d7f6e2.pdf"
     },
     {
-      "game": "수집형 RPG",
-      "title": "전투 역할에 따른 캐릭터 스탯 테이블",
-      "type": "밸런스 기획",
-      "format": "XLSX",
-      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80",
-      "file": ""
+      "game": "스텔라 소라",
+      "title": "01_창작_시스템_스텔라소라_아이템연성",
+      "type": "시스템 기획",
+      "format": "PDF",
+      "image": "/PR_Portfolio/assets/media/a99d72bfbd782c2b74d120ca.png",
+      "file": "/PR_Portfolio/assets/media/01855a32b2155073d17735e1.pdf"
+    },
+    {
+      "game": "쿠키런 킹덤",
+      "title": "00_역기획_UI_쿠키런킹덤_비스킷",
+      "type": "시스템 기획",
+      "format": "PDF",
+      "image": "/PR_Portfolio/assets/media/2e898782cb28d0761d7127e4.png",
+      "file": "/PR_Portfolio/assets/media/1525c92982d34150dc1a7594.pdf"
     }
   ]
 }

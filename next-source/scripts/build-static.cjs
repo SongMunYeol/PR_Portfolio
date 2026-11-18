@@ -24,7 +24,7 @@ async function main(){
   let bytes,extension;
   if(value.startsWith('/api/media/')){const name=path.basename(value);if(!/^[0-9a-f-]+\.(png|jpg|jpeg|webp|gif|pdf|xlsx)$/.test(name))throw Error('Invalid file '+name);bytes=await fs.readFile(path.join(root,'data','uploads',name));extension=path.extname(name)}
   else {const match=value.match(/^data:(image\/(?:png|jpeg|webp|gif)|application\/pdf|application\/vnd\.openxmlformats-officedocument\.spreadsheetml\.sheet);base64,(.+)$/s);if(!match)throw Error('Unsupported embedded file');bytes=Buffer.from(match[2],'base64');extension=({'image/png':'.png','image/jpeg':'.jpg','image/webp':'.webp','image/gif':'.gif','application/pdf':'.pdf','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':'.xlsx'})[match[1]]}
-  if(sharp&&['.jpg','.jpeg','.png','.webp'].includes(extension)){bytes=await sharp(bytes).rotate().resize({width:1600,height:1600,fit:'inside',withoutEnlargement:true}).webp({quality:88}).toBuffer();extension='.webp'}
+  if(sharp&&process.env.OPTIMIZE_MEDIA==='1'&&['.jpg','.jpeg','.png','.webp'].includes(extension)){bytes=await sharp(bytes).rotate().resize({width:1600,height:1600,fit:'inside',withoutEnlargement:true}).webp({quality:88}).toBuffer();extension='.webp'}
   const name=crypto.createHash('sha256').update(bytes).digest('hex').slice(0,24)+extension;await fs.writeFile(path.join(stage,'public','assets','media',name),bytes);const url=base+'/assets/media/'+name;copied.set(value,url);return url;
  }
  const published=await walk(content);
