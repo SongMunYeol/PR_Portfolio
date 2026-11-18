@@ -34,8 +34,9 @@ export default function Portfolio({initialContent}){
 const closeHistory=useCallback(()=>setHistoryOpen(false),[]);
 const closeEditor=useCallback(()=>setEditing(false),[]);
  const [ownerPreview,setOwnerPreview]=useState(false);
- const displayContent={...content,genres:withGenreCatalog(content.genres)};
- const gameGenreIndices=displayContent.genres.map((_,index)=>index).filter(index=>!/^(fps|rpg)$/i.test(displayContent.genres[index].name.trim()));
+ const catalogGenres=withGenreCatalog(content.genres);
+ const displayContent={...content,genres:catalogGenres.map(g=>g.name.trim()==='액션'?{...g,name:'ARPG'}:g)};
+ const gameGenreIndices=displayContent.genres.map((_,index)=>index).filter(index=>!/^(fps|rpg|arpg|액션\s*rpg|전략)$/i.test(catalogGenres[index].name.trim()));
  const pageMenus=page==='game'?gameGenreIndices.map(index=>displayContent.genres[index].name):menus[page];const tabs=pageMenus.length?pageMenus:['장르 없음'];
  const p=content.profile;const currentGenre=content.genres[genre]||content.genres[0];const gameList=currentGenre?.games||[];const activeGame=gameList[slide%Math.max(1,gameList.length)];const activeProject=content.projects[project%Math.max(1,content.projects.length)];
  useEffect(()=>{setLocal(staticMode||['localhost','127.0.0.1','[::1]'].includes(location.hostname));if(!staticMode)return;let active=true;const explicit=new URLSearchParams(location.search).get('edit')==='1';if(explicit||preference()!=='published')latestDraft().then(draft=>{if(active&&draft){setContent(draft);saved.current=structuredClone(draft);setOwnerPreview(true);setAutoStatus('저장된 개인 초안')}}).catch(()=>setToast('개인 초안을 불러오지 못했습니다. 저장소의 기존 데이터는 유지됩니다.'));return()=>{active=false}},[]);
