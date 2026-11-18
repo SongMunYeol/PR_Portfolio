@@ -13,7 +13,7 @@ export default function Screens({content,page,section,components,onNavigate}){
  const {Icon,Image,Download}=components;
  const [index,setIndex]=useState(0),[group,setGroup]=useState(0),[direction,setDirection]=useState('next');
  const pageSize=usePageSize(6,2);
- const documentPageSize=4;
+ const documentPageSize=6;
  const licensePageSize=usePageSize(3,1);
  const p=content.profile;
  const specialties=p.specialties.split(/[,/]/).map(x=>x.trim()).filter(Boolean);
