@@ -3,12 +3,12 @@
     "name": "송문열",
     "englishName": "SONG MUN YEOL",
     "role": "게임 기획자",
-    "headline": "재미의 조합을 분석하고, \n시너지를 설계하는 게임 기획자\n송문열입니다.",
+    "headline": "재미의 조합과 시너지를 \n설계하는 게임 기획자\n송문열입니다.",
     "heroDescription": "익숙한 게임 시스템 속 추가 개선 방향을 탐구하여,\n더 발전된 플레이 경험을 논리적인 구조로 구체화합니다.",
     "heroImage": "/PR_Portfolio/assets/media/132ad8cef63868f34c235aee.jpg",
     "portrait": "/PR_Portfolio/assets/media/c18e6418eecd9bad41fa3192.webp",
     "introTitle": "재미의 원리를 탐구하고, 경험을 더 나은 설계로 연결합니다.",
-    "introduction": "다양한 장르의 게임을 깊이 경험하며 플레이어의 선택과 재미를 만드는 시스템에 관심을 가져왔습니다.\n\n광고·마케팅 기획에서는 타깃의 요구를 분석하고 아이디어를 설득력 있는 제안으로 구체화하여 공모전 수상이라는 성과를 거두었습니다.\n\n또한 TRPG 마스터 활동과 게임 시스템 기획서 제작을 통해 아이디어를 실제로 작동하는 규칙과 데이터로 설계하는 역량을 발전시켜 왔습니다.\n\n최근에는 생성형 AI와 Dify를 활용한 게임기획 보조 도구를 개발하며 반복적인 검토 업무를 개선하고 기획 프로세스를 효율화하는 방법까지 탐구하고 있습니다.\n\n다양한 경험을 바탕으로 재미의 이유를 분석하고, 그 가치를 플레이어에게 전달할 수 있는 게임 기획자를 지향합니다.",
+    "introduction": "다수의 게임들을 플레이하면서 게임에 몰입감을 부여하는 핵심 요소인 '재미'를 \n어떤 방법으로 창출하고 사람들에게 전달하는지 알고 싶었습니다.\n\nPC·콘솔·모바일 등의 플랫폼 등 다양한 장르의 게임들을 평균 1000 ~ 3000시간 이상 플레이하면서\n각 게임들마다 강조되는 핵심 재미 및 시스템을 분석해보면서 인사이트를 쌓아나갔습니다.\n\n특히 최근에 즐겨 플레이하고 있던 모바일 수집형 RPG 장르 위주에 중점을 두고\n시스템, 콘텐츠, UI·UX, 데이터 등의 게임 기획 과정을 직접 분석하고 설계해보면서\n다수의 기획서 작성을 통해 게임 기획 숙련도를 높이는 작업을 진행하고 있습니다.\n\n추가로 생성형 AI로 게임을 개발하는 시대에 대응하기 위한 역량을 향상시키고자\n코덱스 및 클로드 등의 AI를 연계 활용하여 직접 게임을 제작하고 있습니다.\n\n추후 제가 느꼈던 '재미'를 즐기던 입장에서 남들에게 새로운 재미를 선보일 수 있는 위치에 서고자\n끊임없이 도전하고 발전해나가는 게임 기획자로 거듭나도록 노력하겠습니다.\n",
     "birth": "1994.10.02",
     "phone": "010-8631-3847",
     "email": "smy10021@gmail.com",
@@ -59,40 +59,40 @@
   ],
   "licenses": [
     {
-      "name": "정보기술자격(ITQ)_MS워드 ",
+      "name": "정보기술자격(ITQ)_한글엑셀 ",
       "grade": "A등급",
       "date": "2026.04.02",
       "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
-      "image": "/PR_Portfolio/assets/media/1e6a3859f3b03eb1077a4aad.png"
+      "image": "/PR_Portfolio/assets/media/b4f149ea8689a1bbcfb3e8bd.png"
+    },
+    {
+      "name": "정보기술자격(ITQ)_한글파워포인트 ",
+      "grade": "A등급",
+      "date": "2026.04.02",
+      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
+      "image": "/PR_Portfolio/assets/media/b4f149ea8689a1bbcfb3e8bd.png"
     },
     {
       "name": "정보기술자격(ITQ)_MS워드 ",
       "grade": "A등급",
       "date": "2026.04.02",
       "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
-      "image": "/PR_Portfolio/assets/media/1e6a3859f3b03eb1077a4aad.png"
-    },
-    {
-      "name": "정보기술자격(ITQ)_MS워드 ",
-      "grade": "A등급",
-      "date": "2026.04.02",
-      "file": "/PR_Portfolio/assets/media/67d81b8c3b311d54b2fc35e4.pdf",
-      "image": "/PR_Portfolio/assets/media/1e6a3859f3b03eb1077a4aad.png"
+      "image": "/PR_Portfolio/assets/media/b4f149ea8689a1bbcfb3e8bd.png"
     }
   ],
   "careers": [
     {
-      "company": "(주)라이징크래프트 입사",
-      "position": "대리",
-      "period": "2020.06~2024.05",
-      "roles": "콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n리소스 기획: 나레이션 및 캐릭터 대사 기획\n마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행",
+      "company": "??",
+      "position": "",
+      "period": "",
+      "roles": "",
       "image": "/PR_Portfolio/assets/media/a79957ede905f8a4a44a6074.webp"
     }
   ],
   "projects": [
     {
-      "title": "코딩나이츠 AR",
-      "description": "코딩나이츠 AR은 증강현실(AR) 기술과 팝업북을 결합한 유아·초등학생 대상 코딩 교육 콘텐츠로 프로그래밍의 기본 원리와 알고리즘을 쉽게 학습할 수 있는 모바일 앱",
+      "title": "??",
+      "description": "",
       "image": "/PR_Portfolio/assets/media/1474b52b542cf581bad38fbe.webp"
     }
   ],
@@ -101,7 +101,18 @@
       "title": "ASIA STUDENT PACKAGE DESIGN COMPETITION 2017 금상 수상",
       "organization": "ASPAC",
       "date": "2017.12.03",
-      "image": "/PR_Portfolio/assets/media/1e5736340b5a4785b91b98d3.jpg"
+      "image": "/PR_Portfolio/assets/media/1e5736340b5a4785b91b98d3.jpg",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/6eb07c32c8325718901d89d4.jpg"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/0848ee661ab376f15ec273cd.jpg"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/3cad9b3a8f43f68d612191d5.jpg"
+        }
+      ]
     }
   ],
   "game": {
@@ -126,164 +137,504 @@
           "image": "/PR_Portfolio/assets/media/07dd10a4d085030d428c3aa8.jpg"
         },
         {
+          "name": "트릭컬 리바이브",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/5dcee7a665d1246a46894c48.jpg"
+        },
+        {
           "name": "승리의 여신: 니케",
           "description": "",
           "image": "/PR_Portfolio/assets/media/e8e7e8035890985863bcef03.jpg"
         },
         {
-          "name": "브라운더스트2",
+          "name": "스텔라 소라",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/66041563ef4077651e144d7f.jpg"
+          "image": "/PR_Portfolio/assets/media/8a7ebf558cef1869067e80f0.jpg"
         },
         {
-          "name": "",
+          "name": "브라운더스트 2",
           "description": "",
-          "image": ""
+          "image": "/PR_Portfolio/assets/media/4eba78fa022c35865b72c0c9.jpg"
         },
         {
-          "name": "",
+          "name": "나 혼자만 레벨업: ARISE",
           "description": "",
-          "image": ""
+          "image": "/PR_Portfolio/assets/media/b664f6b45453458a6cba0ac5.jpg"
         },
         {
-          "name": "",
+          "name": "몬길: STAR DIVE",
           "description": "",
-          "image": ""
+          "image": "/PR_Portfolio/assets/media/000463d34f665231885dcb3a.png"
         },
         {
-          "name": "",
+          "name": "젠레스 존 제로",
           "description": "",
-          "image": ""
+          "image": "/PR_Portfolio/assets/media/e26db387709d020dd86c704a.jpg"
         },
         {
-          "name": "",
+          "name": "명일방주: ARKMIGHTS",
           "description": "",
-          "image": ""
+          "image": "/PR_Portfolio/assets/media/ea82e9ed25dd8b4e8102862b.png"
         },
-        {
-          "name": "",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        },
-        {
-          "name": "새 게임",
-          "description": "",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "name": "액션 RPG",
-      "games": [
         {
           "name": "원신",
-          "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/4bb85dbdfd507de35b4810dc.jpg"
         },
         {
-          "name": "명조: 워더링 웨이브",
-          "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
+          "name": "명일방주: ENDFEILD",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/904131a85d474816f4055d7d.png"
         },
         {
-          "name": "몬스터 헌터",
-          "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+          "name": "리버스: 1999",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/232cd960aefeddf4d523bb46.jpg"
+        },
+        {
+          "name": "에픽세븐",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/35dade42240f163f42dc0760.jpg"
+        },
+        {
+          "name": "카오스 제로 나이트메어\n",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/9ee64ddb9085e631920f4d08.jpg"
+        },
+        {
+          "name": "림버스 컴퍼니\n",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/32fb4e8e036ec11bbfc90679.png"
         }
       ]
     },
     {
-      "name": "전략 · 기타",
+      "name": "ARPG",
+      "games": []
+    },
+    {
+      "name": "FPS",
       "games": [
         {
           "name": "전략적 팀 전투",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80"
+          "image": "/PR_Portfolio/assets/media/05f8148e742b75e287921687.jpg"
         },
         {
           "name": "슬레이 더 스파이어",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
+          "image": "/PR_Portfolio/assets/media/5436fa791e5baeb2fe2cf1ea.jpg"
         },
         {
           "name": "문명 VI",
           "description": "게임별 플레이 기록을 입력해 주세요.",
-          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+          "image": "/PR_Portfolio/assets/media/1853b6ddbde9b09ad95ec1da.jpg"
+        }
+      ]
+    },
+    {
+      "name": "RPG",
+      "classification": "sub",
+      "description": "",
+      "games": []
+    },
+    {
+      "name": "액션",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "엘든링",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/d82678c92e2213e672723427.jpg"
+        },
+        {
+          "name": "엘더스크롤 5: 스카이림",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/39b9f32c27adc018002e2152.webp"
+        },
+        {
+          "name": "몬스터 헌터: 월드",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/93df962a9166586abf8189fc.jpg"
+        },
+        {
+          "name": "세키로: 쉐도우 다이 트와이스",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/8d5d8e9dfcfeca4ccb8dfd9b.jpg"
+        },
+        {
+          "name": "P의 거짓",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/c3aeae055e4263f2f58e1c50.jpg"
+        },
+        {
+          "name": "어쌔신크리드: 오디세이",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/d6259dd0ac6cc961f19c078f.jpg"
+        },
+        {
+          "name": "디스아너드 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/c63c995b51e9639010d300d9.jpg"
+        },
+        {
+          "name": "다잉라이트 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/9e21032e72fbba987ea9bc1b.jpg"
+        },
+        {
+          "name": "미들 어스: 쉐도우 오브 모르도르",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/b47170d56b3894e0467b6fc4.jpg"
+        },
+        {
+          "name": "위쳐 3",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/677b67a591f345dcd82d4635.jpg"
+        },
+        {
+          "name": "니어 오토 마타",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/1b9d9961888f0594b70852e7.jpg"
+        },
+        {
+          "name": "로스트 아크",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/f15fddc54e39fe374c9017bf.jpg"
+        },
+        {
+          "name": "검은사막",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/3e8856b22d12c5d857146673.jpg"
+        },
+        {
+          "name": "사이퍼즈",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/192093bf6db6c7e9e94c60d6.jpg"
+        },
+        {
+          "name": "호라이즌 제로 던",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/4e2eaa00e41c047eb75e4d72.jpg"
+        },
+        {
+          "name": "하데스",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/1a326314e5260c326ebf8021.jpg"
+        },
+        {
+          "name": "아웃 워드",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/145932ce6d4d1a6be9fbc53a.jpg"
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/6919aa5e526447d6104c7da2.jpg"
+        },
+        {
+          "name": "데스 도어",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/d1ab2f280eaffd5b3344fb7b.jpg"
+        },
+        {
+          "name": "마운트 앤 블레이드: 배너로드",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/5622cf60320fe5a157da7ebf.jpg"
+        }
+      ]
+    },
+    {
+      "name": "슈팅",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "헬다이버즈2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/34e8acfe5207960c27f02e95.jpg"
+        },
+        {
+          "name": "레인보우식스 시즈",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/cd6a7f14133dbe79475328dd.jpg"
+        },
+        {
+          "name": "파크라이 6",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/5d817a39aea6a178d4a28270.jpg"
+        },
+        {
+          "name": "오버워치",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/f20255b144db495af8a2ee91.jpg"
+        },
+        {
+          "name": "바이오쇼크 인피니티",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/c57f540bbc63af3b05d69159.jpg"
+        },
+        {
+          "name": "Grand Theif Auto 5",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/443528b5464cfd358f1a0739.jpg"
+        },
+        {
+          "name": "새 게임",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/3d9d80d46f9459f3282378ee.jpg"
+        },
+        {
+          "name": "페이데이 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/4e024cc41622531d95d5099e.jpg"
+        },
+        {
+          "name": "둠",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/ca22f38a66dbf7c6c1501020.jpg"
+        },
+        {
+          "name": "레디오어낫",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/028f51d74ad4598d42ff7596.jpg"
+        },
+        {
+          "name": "데드 스페이스 3",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/720ed863ba77807af49b74b3.jpg"
+        },
+        {
+          "name": "메트로 엑소더스",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/81c75841d458f84da1e8a05a.jpg"
+        },
+        {
+          "name": "사이버펑크 2077",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/ec0117743b08ce6e8e29948e.jpg"
+        },
+        {
+          "name": "바이오하자드 빌리지",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/954edde95769b572aaeebc87.jpg"
+        },
+        {
+          "name": "레프트 4 데드 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/2e99b3de9f8c157fd7d4fda0.jpg"
+        },
+        {
+          "name": "고스트리콘 브레이크포인트",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/248c3ad3d3290dc62473d06c.jpg"
+        },
+        {
+          "name": "데이즈곤",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/e1d280a6ed29b8907358600d.jpg"
+        },
+        {
+          "name": "울펜슈타인 더 뉴 오더",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/95bc891718c3a0dfd426a881.jpg"
+        },
+        {
+          "name": "레이지 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/c1be6b21c297e9c9c1992e93.jpg"
+        }
+      ]
+    },
+    {
+      "name": "전략",
+      "classification": "sub",
+      "description": "",
+      "games": []
+    },
+    {
+      "name": "시뮬레이션",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "데이브 더 다이버",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/a4c801bdbc039ac6e9ca1c9c.jpg"
+        },
+        {
+          "name": "마이 타임 앳 포샤",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/344c6a9f505b35d24b9c06e7.jpg"
+        },
+        {
+          "name": "스타듀밸리",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/302267ea8f10888125c23ce3.jpg"
+        },
+        {
+          "name": "코랄 아일랜드",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/cb4ae4f6f24ceffaaee2d3f1.jpg"
+        },
+        {
+          "name": "새티스팩토리",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/a7fc514bfc6f73d82991e199.jpg"
+        },
+        {
+          "name": "컬트 오브 더 램",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/4a47870e7b5b85b1113f4b7e.jpg"
+        },
+        {
+          "name": "씨프 시뮬레이터",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/3de59ea74eb4151e2f30ba90.png"
+        },
+        {
+          "name": "포션 크래프트",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/ec035ffb62404e6c2b2eced9.jpg"
+        },
+        {
+          "name": "하우스 플리퍼",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/7fb2219af31596299df69c7d.jpg"
+        }
+      ]
+    },
+    {
+      "name": "샌드박스&생존",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "선즈 오브 더 포레스트",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/d5433d84cbb953cd56eec686.jpg"
+        },
+        {
+          "name": "팰월드",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/ad5b0e1f376d893f02052940.jpg"
+        },
+        {
+          "name": "래프트",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/94f7d11c9bc3ad926b117066.jpg"
+        },
+        {
+          "name": "서브노티카",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/f229a4e6c13cd081b10513e7.jpg"
+        },
+        {
+          "name": "그린 헬",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/1e68947f2428e09cceec7f45.jpg"
+        },
+        {
+          "name": "코난 엑자일",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/9774aa7e92ae02d3c5b2a387.jpg"
+        },
+        {
+          "name": "포레이저",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/cfdbb8fb24c6274cf88c52fb.jpg"
+        },
+        {
+          "name": "아스트로니어",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/947fb2f38789442d9483e13e.jpg"
+        },
+        {
+          "name": "더 롱 다크",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/01c128faf32d3d0731644179.jpg"
+        }
+      ]
+    },
+    {
+      "name": "퍼즐",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "슈퍼리미널",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/9f9382c4b9daa523170d620e.jpg"
+        },
+        {
+          "name": "이스케이프 시뮬레이터",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/16b8a520edf2aa66eba6cc44.jpg"
+        },
+        {
+          "name": "포탈 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/396cd4b0f922922b2cb54861.jpg"
+        }
+      ]
+    },
+    {
+      "name": "플랫폼",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "리틀 나이트메어",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/562305e15e9f4f8110e60d9b.jpg"
+        },
+        {
+          "name": "잇 테이크 투\n",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/2c30bd278835d10a0f6b3c39.jpg"
+        },
+        {
+          "name": "산나비",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/570d722c2c12b6b6c00bdfd2.jpg"
+        },
+        {
+          "name": "할로우나이트",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/20cd89b58de8d56084961654.jpg"
+        }
+      ]
+    },
+    {
+      "name": "어드벤처",
+      "classification": "sub",
+      "description": "",
+      "games": [
+        {
+          "name": "레드 데드 리뎀션 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/8a3b6902d5b9e8488a85d2eb.jpg"
+        },
+        {
+          "name": "스트레이",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/f04495b13c64c880d088dd4d.jpg"
+        },
+        {
+          "name": "미사이드",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/e8979579c24c129016d8cb38.jpg"
+        },
+        {
+          "name": "툼 레이더",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/a56858e63b327fd5d5f66f88.jpg"
+        },
+        {
+          "name": "어 플래그 테일: 이노센스\n",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/76517c9040e1971938500fd8.jpg"
         }
       ]
     }
@@ -353,6 +704,109 @@
       "format": "PDF",
       "image": "/PR_Portfolio/assets/media/2e898782cb28d0761d7127e4.png",
       "file": "/PR_Portfolio/assets/media/1525c92982d34150dc1a7594.pdf"
+    }
+  ],
+  "activities": [
+    {
+      "date": "2020-07",
+      "title": "코딩나이츠 VR·AR 개발",
+      "description": "VR/AR 기반 블록형 코딩 교육 게임 <코딩나이츠> 기획 작업 진행\n콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n리소스 기획: 나레이션 및 캐릭터 대사 기획\n마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행\n",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/0cbc877e2111f222d7dd5d16.webp"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/6ba7cd3a5d305bea09e7e266.webp"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/4feb7fd73f44e8191691a852.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/86959ad4803a77864a0f7e30.jpg"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/acb88e573ec64c568d093d79.jpg"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/454ba9af910f50d36d803743.jpg"
+        }
+      ]
+    },
+    {
+      "date": "2020-06",
+      "title": "라이징 크래프트 스튜디오 입사",
+      "description": "라이징 크래프트에 입사하여...\n",
+      "images": []
+    },
+    {
+      "date": "2020-08",
+      "title": "서울 VR‧AR EXPO 2020 참가",
+      "description": "활동 내용을 입력해 주세요.",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/ea793718c453bf7471a1f1b9.jpg"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/b8ca71eff70d4aa3d587a711.jpg"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/da0def0a0c32dac475577fc7.jpg"
+        }
+      ]
+    },
+    {
+      "date": "2022-02",
+      "title": "코딩나이츠 AR 앱 출시",
+      "description": "코딩나이츠 AR 및 팝업북 출시\n\n[코딩나이츠 AR이란?]\n증강현실(AR) 기술과 팝업북을 결합한 유아·초등학생 대상 코딩 교육 콘텐츠로 프로그래밍의 기본 원리와 알고리즘을 쉽게 학습할 수 있는 모바일 앱",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/c725c34e089345688bbae53e.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/685b2e6656aeb75e35c6c4c5.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/0010c17f2180f1c43ad7e376.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/a98c80ff53d946b327a6add8.jpg"
+        }
+      ]
+    },
+    {
+      "date": "2026-07",
+      "title": "새로운 도약",
+      "description": "모바일 수집형 RPG 장르 기획 관련 게임 기획 문서 작성 및 AI 게임 개발 작업 진행\n\n",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/69b0de1c49cefd6e3667bb70.png"
+        }
+      ]
+    },
+    {
+      "date": "2022-08",
+      "title": "TiU 개발",
+      "description": "뇌인지 XR 재활프로그램 TiU의 콘텐츠 기획 작업 진행",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/610ee25135cf3f620545a565.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/a1015cd8b8095a61b02da637.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/3d3ca23d7b0b6fb42251fbc9.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/592b168785feef9e2132f42b.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/1c3d1b72e138ba30c96663fd.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/f6b09b94bd2c6b1a72635fc9.png"
+        }
+      ]
     }
   ]
 }

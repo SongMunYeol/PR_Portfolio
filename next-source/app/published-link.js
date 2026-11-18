@@ -1,0 +1,10 @@
+'use client';
+import {useState,useEffect} from 'react';
+import {contentSignature} from './content-signature';
+import {portableContent} from './static-storage';
+export default function PublishedLink({content,published,className='',children='공개용 링크 ↗'}){
+ const [status,setStatus]=useState('checking'),[open,setOpen]=useState(false),[busy,setBusy]=useState(false),[message,setMessage]=useState('');
+ useEffect(()=>{let active=true;setStatus('checking');Promise.all([contentSignature(content),contentSignature(published)]).then(([a,b])=>{if(active)setStatus(a===b?'same':'changed')}).catch(()=>{if(active)setStatus('unknown')});return()=>{active=false}},[content,published]);
+ async function download(){setBusy(true);try{const snapshot=await portableContent(content);const url=URL.createObjectURL(new Blob([JSON.stringify(snapshot,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='content.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);setMessage('최신 내용과 첨부 파일을 포함한 content.json을 받았습니다. 이 채팅에 첨부해 공개 반영을 요청하거나 GitHub의 next-source/content.json을 업데이트하세요.')}catch(error){setMessage('파일을 만들지 못했습니다. 현재 초안은 유지됩니다. '+error.message)}finally{setBusy(false)}}
+ return <><a href="?view=public" className={className} target="_blank" rel="noopener noreferrer" onClick={event=>{if(status!=='same'){event.preventDefault();setOpen(true)}}}>{children}</a>{open&&<div className="publish-sync-overlay"><section role="dialog" aria-modal="true" aria-labelledby="publish-sync-title" className="publish-sync-dialog"><h2 id="publish-sync-title">최신 편집 내용의 공개 반영이 필요합니다</h2><p>이 브라우저의 편집본과 현재 공개본이 다르거나, 일치 여부를 아직 확인하지 못했습니다. 초안 저장·편집 완료는 개인 저장이며 공개 사이트를 자동으로 업데이트하지 않습니다.</p><p>최신 텍스트·이미지·문서가 포함된 파일을 받아 공개 반영한 후 링크를 공유해 주세요. 기존 초안과 버전 기록은 유지됩니다.</p><button disabled={busy} onClick={download}>{busy?'첨부 파일 준비 중…':'공개 반영용 파일 받기'}</button><a href="?view=public" target="_blank" rel="noopener noreferrer">현재 게시된 공개본 확인 ↗</a><button disabled={busy} onClick={()=>setOpen(false)}>닫기</button>{message&&<p role="status">{message}</p>}</section></div>}</>;
+}
