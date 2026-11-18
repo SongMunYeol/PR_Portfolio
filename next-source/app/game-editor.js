@@ -1,10 +1,12 @@
 'use client';
 import {useState} from 'react';
 import {defaultContent} from './content-defaults';
+import {withGenreCatalog} from './genre-catalog';
 import {mainGenreIndex} from './content-schema';
 
 function withValue(content,path,value){const next=structuredClone(content);let target=next;for(const key of path.slice(0,-1))target=target[key];target[path.at(-1)]=value;return next}
 export default function GameEditor({content,onChange,renderFields}){
+ content={...content,genres:withGenreCatalog(content.genres)};
  const [view,setView]=useState(0),[selected,setSelected]=useState(0);
  const active=Math.min(selected,Math.max(0,content.genres.length-1));const genre=content.genres[active];const mainIndex=mainGenreIndex(content.genres);
  const change=(path,value)=>onChange(withValue(content,path,value));
