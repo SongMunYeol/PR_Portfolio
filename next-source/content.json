@@ -710,7 +710,7 @@
     {
       "date": "2020-07",
       "title": "코딩나이츠 VR·AR 개발",
-      "description": "VR/AR 기반 블록형 코딩 교육 게임 <코딩나이츠> 기획 작업 진행\n콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n리소스 기획: 나레이션 및 캐릭터 대사 기획\n마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행\n",
+      "description": "VR/AR 기반 블록형 코딩 교육 게임 <코딩나이츠> 기획 작업 진행\n\n콘텐츠 기획: 메인 콘텐츠 및 미니 게임 기획\n레벨 기획: 스테이지 구성, 난이도 기획 및 디자인 작업 진행\n캐릭터 기획: 캐릭터 콘셉트 기획 및 디자인 작업 진행\n몬스터 기획: 몬스터 콘셉트 기획 및 디자인 작업 진행\n시나리오 기획: 게임 스토리 콘셉 및 시나리오 수정\n리소스 기획: 나레이션 및 캐릭터 대사 기획\n마케팅 업무 보조: 팜플렛, 배너, 카드뉴스, 홈페이지 등의 디자인 작업 진행\n",
       "images": [
         {
           "image": "/PR_Portfolio/assets/media/0cbc877e2111f222d7dd5d16.webp"
@@ -735,13 +735,17 @@
     {
       "date": "2020-06",
       "title": "라이징 크래프트 스튜디오 입사",
-      "description": "라이징 크래프트에 입사하여...\n",
-      "images": []
+      "description": "VR·AR 및 게임·헬스케어 콘텐츠 개발 기업 <라이징 크래프트 스튜디오>에 \n신입 기획자로 입사\n",
+      "images": [
+        {
+          "image": "/PR_Portfolio/assets/media/47745f954ad6f52d96dcc61c.png"
+        }
+      ]
     },
     {
       "date": "2020-08",
       "title": "서울 VR‧AR EXPO 2020 참가",
-      "description": "활동 내용을 입력해 주세요.",
+      "description": "최신 VR‧AR 기술과 솔루션을 선보이는 <서울 VR‧AR EXPO 2020>에서\n코딩나이츠 VR 시연 및 홍보 스태프로 참여\n",
       "images": [
         {
           "image": "/PR_Portfolio/assets/media/ea793718c453bf7471a1f1b9.jpg"
@@ -786,7 +790,7 @@
     {
       "date": "2022-08",
       "title": "TiU 개발",
-      "description": "뇌인지 XR 재활프로그램 TiU의 콘텐츠 기획 작업 진행",
+      "description": "뇌인지 XR 재활프로그램 TiU의 본격적인 콘텐츠 기획 작업 진행\n\n[TiU란?]\n환상통·편마비 환자 재활을 돕는 VR 디지털 치료 솔루션\n",
       "images": [
         {
           "image": "/PR_Portfolio/assets/media/610ee25135cf3f620545a565.png"
@@ -805,6 +809,9 @@
         },
         {
           "image": "/PR_Portfolio/assets/media/f6b09b94bd2c6b1a72635fc9.png"
+        },
+        {
+          "image": "/PR_Portfolio/assets/media/dc7a3965b27a8774f97d6bcb.jpg"
         }
       ]
     }
