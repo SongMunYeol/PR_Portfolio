@@ -8,7 +8,7 @@
     "heroImage": "/PR_Portfolio/assets/media/132ad8cef63868f34c235aee.jpg",
     "portrait": "/PR_Portfolio/assets/media/c18e6418eecd9bad41fa3192.webp",
     "introTitle": "재미의 원리를 탐구하고, 경험을 더 나은 설계로 연결합니다.",
-    "introduction": "다수의 게임들을 플레이하면서 게임에 몰입감을 부여하는 핵심 요소인 '재미'를 \n어떤 방법으로 창출하고 사람들에게 전달하는지 알고 싶었습니다.\n\nPC·콘솔·모바일 등의 플랫폼 등 다양한 장르의 게임들을 평균 1000 ~ 3000시간 이상 플레이하면서\n각 게임들마다 강조되는 핵심 재미 및 시스템을 분석해보면서 인사이트를 쌓아나갔습니다.\n\n특히 최근에 즐겨 플레이하고 있던 모바일 수집형 RPG 장르 위주에 중점을 두고\n시스템, 콘텐츠, UI·UX, 데이터 등의 게임 기획 과정을 직접 분석하고 설계해보면서\n다수의 기획서 작성을 통해 게임 기획 숙련도를 높이는 작업을 진행하고 있습니다.\n\n추가로 생성형 AI로 게임을 개발하는 시대에 대응하기 위한 역량을 향상시키고자\n코덱스 및 클로드 등의 AI를 연계 활용하여 직접 게임을 제작하고 있습니다.\n\n추후 제가 느꼈던 '재미'를 즐기던 입장에서 남들에게 새로운 재미를 선보일 수 있는 위치에 서고자\n끊임없이 도전하고 발전해나가는 게임 기획자로 거듭나도록 노력하겠습니다.\n",
+    "introduction": "다수의 게임들을 플레이하면서 게임에 몰입감을 부여하는 핵심 요소인 '재미'를 \n어떤 방법으로 창출하고 사람들에게 전달하는지 알고 싶었습니다.\n\nPC·콘솔·모바일 등의 플랫폼 등 다양한 게임들을 장르 구분없이 깊게 플레이하면서\n각 게임들마다 강조되는 핵심 재미 및 시스템을 분석해보면서 인사이트를 쌓아나갔습니다.\n\n특히 최근에 즐겨 플레이하고 있던 모바일 수집형 RPG 장르 위주에 중점을 두고\n시스템, 콘텐츠, UI·UX, 데이터 등의 게임 기획 과정을 직접 분석하고 설계해보면서\n다수의 기획서 작성을 통해 게임 기획 숙련도를 높이는 작업을 진행하고 있습니다.\n\n추가로 생성형 AI로 게임을 개발하는 시대에 대응하기 위한 역량을 향상시키고자\n코덱스 및 클로드 등의 AI를 연계 활용하여 직접 게임을 제작하고 있습니다.\n\n추후 제가 느꼈던 '재미'를 즐기던 입장에서 남들에게 새로운 재미를 선보일 수 있는 위치에 서고자\n끊임없이 도전하고 발전해나가는 게임 기획자로 거듭나도록 노력하겠습니다.\n",
     "birth": "1994.10.02",
     "phone": "010-8631-3847",
     "email": "smy10021@gmail.com",
@@ -43,7 +43,7 @@
     },
     {
       "name": "ChatGPT",
-      "purpose": "기획서 내용 검수 / 자료 리서칭 및 분석 / 이미지 제작 / 게임 제작 등",
+      "purpose": "기획서 내용 검수 / 자료 리서칭 및 분석\n이미지 제작 / 게임 제작",
       "logo": "/PR_Portfolio/assets/media/c8f92b137269eacafc3970de.webp"
     },
     {
@@ -129,82 +129,98 @@
         {
           "name": "쿠키런 킹덤",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/64260b2bf52e736865491a36.jpg"
+          "image": "/PR_Portfolio/assets/media/64260b2bf52e736865491a36.jpg",
+          "playTime": "계정 LV.89"
         },
         {
           "name": "블루 아카이브",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/07dd10a4d085030d428c3aa8.jpg"
+          "image": "/PR_Portfolio/assets/media/07dd10a4d085030d428c3aa8.jpg",
+          "playTime": "계정 LV.90"
         },
         {
           "name": "트릭컬 리바이브",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/5dcee7a665d1246a46894c48.jpg"
+          "image": "/PR_Portfolio/assets/media/5dcee7a665d1246a46894c48.jpg",
+          "playTime": "계정 LV.115"
         },
         {
           "name": "승리의 여신: 니케",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/e8e7e8035890985863bcef03.jpg"
+          "image": "/PR_Portfolio/assets/media/e8e7e8035890985863bcef03.jpg",
+          "playTime": "계정 LV.221"
         },
         {
           "name": "스텔라 소라",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/8a7ebf558cef1869067e80f0.jpg"
+          "image": "/PR_Portfolio/assets/media/8a7ebf558cef1869067e80f0.jpg",
+          "playTime": "3개월 이내"
         },
         {
           "name": "브라운더스트 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/4eba78fa022c35865b72c0c9.jpg"
+          "image": "/PR_Portfolio/assets/media/4eba78fa022c35865b72c0c9.jpg",
+          "playTime": "3개월 이내"
         },
         {
-          "name": "나 혼자만 레벨업: ARISE",
+          "name": "나 혼자만 레벨업:\nARISE",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/b664f6b45453458a6cba0ac5.jpg"
+          "image": "/PR_Portfolio/assets/media/b664f6b45453458a6cba0ac5.jpg",
+          "playTime": "3개월 이내"
         },
         {
           "name": "몬길: STAR DIVE",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/000463d34f665231885dcb3a.png"
+          "image": "/PR_Portfolio/assets/media/000463d34f665231885dcb3a.png",
+          "playTime": "3개월 이내"
         },
         {
           "name": "젠레스 존 제로",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/e26db387709d020dd86c704a.jpg"
+          "image": "/PR_Portfolio/assets/media/e26db387709d020dd86c704a.jpg",
+          "playTime": "3개월 이내"
         },
         {
-          "name": "명일방주: ARKMIGHTS",
+          "name": "명일방주:\nARKNIGHTS",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/ea82e9ed25dd8b4e8102862b.png"
+          "image": "/PR_Portfolio/assets/media/ea82e9ed25dd8b4e8102862b.png",
+          "playTime": "3개월 이내"
         },
         {
           "name": "원신",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/4bb85dbdfd507de35b4810dc.jpg"
+          "image": "/PR_Portfolio/assets/media/4bb85dbdfd507de35b4810dc.jpg",
+          "playTime": "3개월 이내"
         },
         {
-          "name": "명일방주: ENDFEILD",
+          "name": "명일방주:\nENDFEILD",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/904131a85d474816f4055d7d.png"
+          "image": "/PR_Portfolio/assets/media/904131a85d474816f4055d7d.png",
+          "playTime": "3개월 이내"
         },
         {
           "name": "리버스: 1999",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/232cd960aefeddf4d523bb46.jpg"
+          "image": "/PR_Portfolio/assets/media/232cd960aefeddf4d523bb46.jpg",
+          "playTime": "3개월 이내"
         },
         {
           "name": "에픽세븐",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/35dade42240f163f42dc0760.jpg"
+          "image": "/PR_Portfolio/assets/media/35dade42240f163f42dc0760.jpg",
+          "playTime": "3개월 이내"
         },
         {
-          "name": "카오스 제로 나이트메어\n",
+          "name": "카오스 제로\n나이트메어\n",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/9ee64ddb9085e631920f4d08.jpg"
+          "image": "/PR_Portfolio/assets/media/9ee64ddb9085e631920f4d08.jpg",
+          "playTime": "3개월 이내"
         },
         {
           "name": "림버스 컴퍼니\n",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/32fb4e8e036ec11bbfc90679.png"
+          "image": "/PR_Portfolio/assets/media/32fb4e8e036ec11bbfc90679.png",
+          "playTime": "3개월 이내"
         }
       ]
     },
@@ -246,102 +262,122 @@
         {
           "name": "엘든링",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/d82678c92e2213e672723427.jpg"
+          "image": "/PR_Portfolio/assets/media/d82678c92e2213e672723427.jpg",
+          "playTime": "2288H"
         },
         {
-          "name": "엘더스크롤 5: 스카이림",
+          "name": "엘더스크롤 5:\n스카이림",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/39b9f32c27adc018002e2152.webp"
+          "image": "/PR_Portfolio/assets/media/39b9f32c27adc018002e2152.webp",
+          "playTime": "3000H"
         },
         {
           "name": "몬스터 헌터: 월드",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/93df962a9166586abf8189fc.jpg"
+          "image": "/PR_Portfolio/assets/media/93df962a9166586abf8189fc.jpg",
+          "playTime": "2654H"
         },
         {
-          "name": "세키로: 쉐도우 다이 트와이스",
+          "name": "세키로:\n쉐도우 다이 트와이스",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/8d5d8e9dfcfeca4ccb8dfd9b.jpg"
+          "image": "/PR_Portfolio/assets/media/8d5d8e9dfcfeca4ccb8dfd9b.jpg",
+          "playTime": "127H"
         },
         {
           "name": "P의 거짓",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/c3aeae055e4263f2f58e1c50.jpg"
+          "image": "/PR_Portfolio/assets/media/c3aeae055e4263f2f58e1c50.jpg",
+          "playTime": "162H"
         },
         {
-          "name": "어쌔신크리드: 오디세이",
+          "name": "어쌔신크리드:\n오디세이",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/d6259dd0ac6cc961f19c078f.jpg"
+          "image": "/PR_Portfolio/assets/media/d6259dd0ac6cc961f19c078f.jpg",
+          "playTime": "157H"
         },
         {
           "name": "디스아너드 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/c63c995b51e9639010d300d9.jpg"
+          "image": "/PR_Portfolio/assets/media/c63c995b51e9639010d300d9.jpg",
+          "playTime": "69H"
         },
         {
           "name": "다잉라이트 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/9e21032e72fbba987ea9bc1b.jpg"
+          "image": "/PR_Portfolio/assets/media/9e21032e72fbba987ea9bc1b.jpg",
+          "playTime": "1235H"
         },
         {
-          "name": "미들 어스: 쉐도우 오브 모르도르",
+          "name": "미들 어스:\n쉐도우 오브 모르도르",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/b47170d56b3894e0467b6fc4.jpg"
+          "image": "/PR_Portfolio/assets/media/b47170d56b3894e0467b6fc4.jpg",
+          "playTime": "6H1"
         },
         {
           "name": "위쳐 3",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/677b67a591f345dcd82d4635.jpg"
+          "image": "/PR_Portfolio/assets/media/677b67a591f345dcd82d4635.jpg",
+          "playTime": "108H"
         },
         {
           "name": "니어 오토 마타",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/1b9d9961888f0594b70852e7.jpg"
+          "image": "/PR_Portfolio/assets/media/1b9d9961888f0594b70852e7.jpg",
+          "playTime": "1회차 완료"
         },
         {
           "name": "로스트 아크",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/f15fddc54e39fe374c9017bf.jpg"
+          "image": "/PR_Portfolio/assets/media/f15fddc54e39fe374c9017bf.jpg",
+          "playTime": "초반 구간 진행 중"
         },
         {
           "name": "검은사막",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/3e8856b22d12c5d857146673.jpg"
+          "image": "/PR_Portfolio/assets/media/3e8856b22d12c5d857146673.jpg",
+          "playTime": "우사 LV.60"
         },
         {
           "name": "사이퍼즈",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/192093bf6db6c7e9e94c60d6.jpg"
+          "image": "/PR_Portfolio/assets/media/192093bf6db6c7e9e94c60d6.jpg",
+          "playTime": "13797전"
         },
         {
           "name": "호라이즌 제로 던",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/4e2eaa00e41c047eb75e4d72.jpg"
+          "image": "/PR_Portfolio/assets/media/4e2eaa00e41c047eb75e4d72.jpg",
+          "playTime": "Clear"
         },
         {
           "name": "하데스",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/1a326314e5260c326ebf8021.jpg"
+          "image": "/PR_Portfolio/assets/media/1a326314e5260c326ebf8021.jpg",
+          "playTime": "초반 구간 진행 중"
         },
         {
           "name": "아웃 워드",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/145932ce6d4d1a6be9fbc53a.jpg"
+          "image": "/PR_Portfolio/assets/media/145932ce6d4d1a6be9fbc53a.jpg",
+          "playTime": "60H"
         },
         {
-          "name": "새 게임",
+          "name": "데드아일랜드 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/6919aa5e526447d6104c7da2.jpg"
+          "image": "/PR_Portfolio/assets/media/6919aa5e526447d6104c7da2.jpg",
+          "playTime": "164H"
         },
         {
           "name": "데스 도어",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/d1ab2f280eaffd5b3344fb7b.jpg"
+          "image": "/PR_Portfolio/assets/media/d1ab2f280eaffd5b3344fb7b.jpg",
+          "playTime": "중간 구간 진행 중"
         },
         {
-          "name": "마운트 앤 블레이드: 배너로드",
+          "name": "마운트 앤 블레이드:\n배너로드",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/5622cf60320fe5a157da7ebf.jpg"
+          "image": "/PR_Portfolio/assets/media/5622cf60320fe5a157da7ebf.jpg",
+          "playTime": "200H"
         }
       ]
     },
@@ -353,17 +389,20 @@
         {
           "name": "헬다이버즈2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/34e8acfe5207960c27f02e95.jpg"
+          "image": "/PR_Portfolio/assets/media/34e8acfe5207960c27f02e95.jpg",
+          "playTime": "942H"
         },
         {
           "name": "레인보우식스 시즈",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/cd6a7f14133dbe79475328dd.jpg"
+          "image": "/PR_Portfolio/assets/media/cd6a7f14133dbe79475328dd.jpg",
+          "playTime": "2631H"
         },
         {
-          "name": "파크라이 6",
+          "name": "파크라이 5",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/5d817a39aea6a178d4a28270.jpg"
+          "image": "/PR_Portfolio/assets/media/d961c0e79a1c240aae9eab65.jpg",
+          "playTime": "7062H"
         },
         {
           "name": "오버워치",
@@ -371,79 +410,112 @@
           "image": "/PR_Portfolio/assets/media/f20255b144db495af8a2ee91.jpg"
         },
         {
-          "name": "바이오쇼크 인피니티",
+          "name": "바이오쇼크\n인피니티",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/c57f540bbc63af3b05d69159.jpg"
+          "image": "/PR_Portfolio/assets/media/c57f540bbc63af3b05d69159.jpg",
+          "playTime": "6H"
         },
         {
           "name": "Grand Theif Auto 5",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/443528b5464cfd358f1a0739.jpg"
+          "image": "/PR_Portfolio/assets/media/443528b5464cfd358f1a0739.jpg",
+          "playTime": "130H"
         },
         {
-          "name": "새 게임",
+          "name": "폴아웃 76",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/3d9d80d46f9459f3282378ee.jpg"
+          "image": "/PR_Portfolio/assets/media/3d9d80d46f9459f3282378ee.jpg",
+          "playTime": "2288H"
         },
         {
           "name": "페이데이 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/4e024cc41622531d95d5099e.jpg"
+          "image": "/PR_Portfolio/assets/media/4e024cc41622531d95d5099e.jpg",
+          "playTime": "683H"
         },
         {
           "name": "둠",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/ca22f38a66dbf7c6c1501020.jpg"
+          "image": "/PR_Portfolio/assets/media/ca22f38a66dbf7c6c1501020.jpg",
+          "playTime": "70H"
         },
         {
-          "name": "레디오어낫",
+          "name": "레디 오어 낫",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/028f51d74ad4598d42ff7596.jpg"
+          "image": "/PR_Portfolio/assets/media/028f51d74ad4598d42ff7596.jpg",
+          "playTime": "82H"
         },
         {
           "name": "데드 스페이스 3",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/720ed863ba77807af49b74b3.jpg"
+          "image": "/PR_Portfolio/assets/media/720ed863ba77807af49b74b3.jpg",
+          "playTime": "49H"
         },
         {
-          "name": "메트로 엑소더스",
+          "name": "메트로 라스트 라이트",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/81c75841d458f84da1e8a05a.jpg"
+          "image": "/PR_Portfolio/assets/media/3503082c3e2a52734f5cbcd2.jpg",
+          "playTime": "20H"
         },
         {
           "name": "사이버펑크 2077",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/ec0117743b08ce6e8e29948e.jpg"
+          "image": "/PR_Portfolio/assets/media/ec0117743b08ce6e8e29948e.jpg",
+          "playTime": "452H"
         },
         {
-          "name": "바이오하자드 빌리지",
+          "name": "바이오하자드:\n빌리지",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/954edde95769b572aaeebc87.jpg"
+          "image": "/PR_Portfolio/assets/media/954edde95769b572aaeebc87.jpg",
+          "playTime": "89H"
         },
         {
           "name": "레프트 4 데드 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/2e99b3de9f8c157fd7d4fda0.jpg"
+          "image": "/PR_Portfolio/assets/media/2e99b3de9f8c157fd7d4fda0.jpg",
+          "playTime": "7H"
         },
         {
-          "name": "고스트리콘 브레이크포인트",
+          "name": "고스트리콘:\n브레이크포인트",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/248c3ad3d3290dc62473d06c.jpg"
+          "image": "/PR_Portfolio/assets/media/248c3ad3d3290dc62473d06c.jpg",
+          "playTime": "277H"
         },
         {
           "name": "데이즈곤",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/e1d280a6ed29b8907358600d.jpg"
+          "image": "/PR_Portfolio/assets/media/e1d280a6ed29b8907358600d.jpg",
+          "playTime": "19H"
         },
         {
-          "name": "울펜슈타인 더 뉴 오더",
+          "name": "울펜슈타인:\n더 뉴 오더",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/95bc891718c3a0dfd426a881.jpg"
+          "image": "/PR_Portfolio/assets/media/95bc891718c3a0dfd426a881.jpg",
+          "playTime": "17H"
         },
         {
           "name": "레이지 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/c1be6b21c297e9c9c1992e93.jpg"
+          "image": "/PR_Portfolio/assets/media/c1be6b21c297e9c9c1992e93.jpg",
+          "playTime": "87H"
+        },
+        {
+          "name": "딥 락 갤럭틱",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/d77868498f5fe3f647216a35.jpg",
+          "playTime": "147H"
+        },
+        {
+          "name": "이스케이프\n프롬 덕코프",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/854d06b310b5f90c3c9f81be.jpg",
+          "playTime": "146H"
+        },
+        {
+          "name": "디비전 2",
+          "description": "",
+          "image": "/PR_Portfolio/assets/media/b364e48d4d5965b736a82e0b.jpg",
+          "playTime": "432H"
         }
       ]
     },
@@ -461,47 +533,56 @@
         {
           "name": "데이브 더 다이버",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/a4c801bdbc039ac6e9ca1c9c.jpg"
+          "image": "/PR_Portfolio/assets/media/a4c801bdbc039ac6e9ca1c9c.jpg",
+          "playTime": "80H"
         },
         {
           "name": "마이 타임 앳 포샤",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/344c6a9f505b35d24b9c06e7.jpg"
+          "image": "/PR_Portfolio/assets/media/344c6a9f505b35d24b9c06e7.jpg",
+          "playTime": "97H"
         },
         {
           "name": "스타듀밸리",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/302267ea8f10888125c23ce3.jpg"
+          "image": "/PR_Portfolio/assets/media/302267ea8f10888125c23ce3.jpg",
+          "playTime": "189H"
         },
         {
           "name": "코랄 아일랜드",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/cb4ae4f6f24ceffaaee2d3f1.jpg"
+          "image": "/PR_Portfolio/assets/media/cb4ae4f6f24ceffaaee2d3f1.jpg",
+          "playTime": "380H"
         },
         {
           "name": "새티스팩토리",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/a7fc514bfc6f73d82991e199.jpg"
+          "image": "/PR_Portfolio/assets/media/a7fc514bfc6f73d82991e199.jpg",
+          "playTime": "57H"
         },
         {
           "name": "컬트 오브 더 램",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/4a47870e7b5b85b1113f4b7e.jpg"
+          "image": "/PR_Portfolio/assets/media/4a47870e7b5b85b1113f4b7e.jpg",
+          "playTime": "중반 구간 진행 중"
         },
         {
           "name": "씨프 시뮬레이터",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/3de59ea74eb4151e2f30ba90.png"
+          "image": "/PR_Portfolio/assets/media/3de59ea74eb4151e2f30ba90.png",
+          "playTime": "2H"
         },
         {
           "name": "포션 크래프트",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/ec035ffb62404e6c2b2eced9.jpg"
+          "image": "/PR_Portfolio/assets/media/ec035ffb62404e6c2b2eced9.jpg",
+          "playTime": "7H"
         },
         {
           "name": "하우스 플리퍼",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/7fb2219af31596299df69c7d.jpg"
+          "image": "/PR_Portfolio/assets/media/7fb2219af31596299df69c7d.jpg",
+          "playTime": "32H"
         }
       ]
     },
@@ -511,49 +592,58 @@
       "description": "",
       "games": [
         {
-          "name": "선즈 오브 더 포레스트",
+          "name": "선즈 오브 더\n포레스트",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/d5433d84cbb953cd56eec686.jpg"
+          "image": "/PR_Portfolio/assets/media/d5433d84cbb953cd56eec686.jpg",
+          "playTime": "319H"
         },
         {
           "name": "팰월드",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/ad5b0e1f376d893f02052940.jpg"
+          "image": "/PR_Portfolio/assets/media/ad5b0e1f376d893f02052940.jpg",
+          "playTime": "214H"
         },
         {
           "name": "래프트",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/94f7d11c9bc3ad926b117066.jpg"
+          "image": "/PR_Portfolio/assets/media/94f7d11c9bc3ad926b117066.jpg",
+          "playTime": "57H"
         },
         {
           "name": "서브노티카",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/f229a4e6c13cd081b10513e7.jpg"
+          "image": "/PR_Portfolio/assets/media/f229a4e6c13cd081b10513e7.jpg",
+          "playTime": "중간 구간 진행 중"
         },
         {
           "name": "그린 헬",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/1e68947f2428e09cceec7f45.jpg"
+          "image": "/PR_Portfolio/assets/media/1e68947f2428e09cceec7f45.jpg",
+          "playTime": "51H"
         },
         {
           "name": "코난 엑자일",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/9774aa7e92ae02d3c5b2a387.jpg"
+          "image": "/PR_Portfolio/assets/media/9774aa7e92ae02d3c5b2a387.jpg",
+          "playTime": "179H"
         },
         {
           "name": "포레이저",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/cfdbb8fb24c6274cf88c52fb.jpg"
+          "image": "/PR_Portfolio/assets/media/cfdbb8fb24c6274cf88c52fb.jpg",
+          "playTime": "Clear"
         },
         {
           "name": "아스트로니어",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/947fb2f38789442d9483e13e.jpg"
+          "image": "/PR_Portfolio/assets/media/947fb2f38789442d9483e13e.jpg",
+          "playTime": "71H"
         },
         {
           "name": "더 롱 다크",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/01c128faf32d3d0731644179.jpg"
+          "image": "/PR_Portfolio/assets/media/01c128faf32d3d0731644179.jpg",
+          "playTime": "10H"
         }
       ]
     },
@@ -565,17 +655,20 @@
         {
           "name": "슈퍼리미널",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/9f9382c4b9daa523170d620e.jpg"
+          "image": "/PR_Portfolio/assets/media/9f9382c4b9daa523170d620e.jpg",
+          "playTime": "Clear"
         },
         {
-          "name": "이스케이프 시뮬레이터",
+          "name": "이스케이프\n시뮬레이터",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/16b8a520edf2aa66eba6cc44.jpg"
+          "image": "/PR_Portfolio/assets/media/16b8a520edf2aa66eba6cc44.jpg",
+          "playTime": "Clear"
         },
         {
           "name": "포탈 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/396cd4b0f922922b2cb54861.jpg"
+          "image": "/PR_Portfolio/assets/media/396cd4b0f922922b2cb54861.jpg",
+          "playTime": "Clear"
         }
       ]
     },
@@ -587,22 +680,26 @@
         {
           "name": "리틀 나이트메어",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/562305e15e9f4f8110e60d9b.jpg"
+          "image": "/PR_Portfolio/assets/media/562305e15e9f4f8110e60d9b.jpg",
+          "playTime": "Clear"
         },
         {
           "name": "잇 테이크 투\n",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/2c30bd278835d10a0f6b3c39.jpg"
+          "image": "/PR_Portfolio/assets/media/2c30bd278835d10a0f6b3c39.jpg",
+          "playTime": "Clear"
         },
         {
           "name": "산나비",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/570d722c2c12b6b6c00bdfd2.jpg"
+          "image": "/PR_Portfolio/assets/media/570d722c2c12b6b6c00bdfd2.jpg",
+          "playTime": "중반 구간 진행 중"
         },
         {
           "name": "할로우나이트",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/20cd89b58de8d56084961654.jpg"
+          "image": "/PR_Portfolio/assets/media/20cd89b58de8d56084961654.jpg",
+          "playTime": "중반 구간 진행 중"
         }
       ]
     },
@@ -614,27 +711,32 @@
         {
           "name": "레드 데드 리뎀션 2",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/8a3b6902d5b9e8488a85d2eb.jpg"
+          "image": "/PR_Portfolio/assets/media/8a3b6902d5b9e8488a85d2eb.jpg",
+          "playTime": "401H"
         },
         {
           "name": "스트레이",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/f04495b13c64c880d088dd4d.jpg"
+          "image": "/PR_Portfolio/assets/media/f04495b13c64c880d088dd4d.jpg",
+          "playTime": "Clear"
         },
         {
           "name": "미사이드",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/e8979579c24c129016d8cb38.jpg"
+          "image": "/PR_Portfolio/assets/media/e8979579c24c129016d8cb38.jpg",
+          "playTime": "Clear"
         },
         {
-          "name": "툼 레이더",
+          "name": "라이즈 오브 더\n툼 레이더",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/a56858e63b327fd5d5f66f88.jpg"
+          "image": "/PR_Portfolio/assets/media/8e9d24d5604cf1df843a81b9.jpg",
+          "playTime": "Clear"
         },
         {
-          "name": "어 플래그 테일: 이노센스\n",
+          "name": "어 플래그 테일:\n이노센스\n",
           "description": "",
-          "image": "/PR_Portfolio/assets/media/76517c9040e1971938500fd8.jpg"
+          "image": "/PR_Portfolio/assets/media/76517c9040e1971938500fd8.jpg",
+          "playTime": "Clear"
         }
       ]
     }
