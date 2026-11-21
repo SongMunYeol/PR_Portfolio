@@ -1,4 +1,4 @@
-const optionalFields=new Set(['activities','careers.*.images','projects.*.images','awards.*.images','licenses.*.image','projects.*.date','game.playPeriod','game.subTitle','game.subDescription','game.carouselDuration','game.carouselAutoplay','genres.*.classification','genres.*.description']);
+const optionalFields=new Set(['genres.*.games.*.playTime','activities','careers.*.images','projects.*.images','awards.*.images','licenses.*.image','projects.*.date','game.playPeriod','game.subTitle','game.subDescription','game.carouselDuration','game.carouselAutoplay','genres.*.classification','genres.*.description']);
 export function validateShape(value,model,path=[],depth=0){
  if(depth>12)return false;
  if(typeof model==='string')return typeof value==='string';

@@ -12,7 +12,7 @@ function Empty(){return <div className="hud-empty"><span>◇</span><h3>등록된
 export default function Screens({content,publishedContent,page,section,components,onNavigate}){
  const {Icon,Image,Download}=components;
  const [index,setIndex]=useState(0),[group,setGroup]=useState(0),[direction,setDirection]=useState('next');
- const pageSize=usePageSize(6,2);
+ const pageSize=usePageSize(8,2);
  const documentPageSize=4;
  const licensePageSize=usePageSize(3,1);
  const p=content.profile;
