@@ -112,3 +112,46 @@
 @media(max-width:700px){.history-timeline>button>b{height:24px;width:34px}.history-timeline>button:before{top:28px}.history-thumbnail{height:48px}.inline-add-item{font-size:10px}.game-carousel-set .game-library-card h3{font-size:10px;line-height:1.5}}
 
 .game-carousel-set .game-library-image{height:var(--game-image-height);max-height:calc(var(--game-card-width) * 1.5);aspect-ratio:auto;flex:none}
+
+/* AI Game case study */
+.ai-game-screen {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+  gap: 18px;
+  color: #4d4d54;
+}
+.ai-game-screen > * { flex-shrink: 0; }
+.ai-game-screen h2 { margin: 0 0 8px; font-size: clamp(25px, 4vw, 38px); color: #303039; line-height: 1.2; }
+.ai-game-screen h3 { margin: 0 0 8px; color: #34343d; font-size: 16px; }
+.ai-game-screen p { margin: 0; font-size: 14px; line-height: 1.75; }
+.ai-game-screen header > p { max-width: 68ch; }
+.ai-game-hero {
+  border-left: 4px solid #d4ab30;
+  padding: clamp(16px, 3vw, 32px);
+  background: linear-gradient(110deg, #fff2bd, #fffefa 80%);
+  border-radius: 4px;
+}
+.ai-game-hero .ai-game-meta { font-size: 12px; color: #6b5417; font-weight: 700; margin-bottom: 10px; }
+.ai-game-overview { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ai-game-card { min-width: 0; background: #fff; border: 1px solid #e7e3d8; border-radius: 6px; padding: clamp(12px, 2vw, 22px); }
+.ai-game-card p + p { margin-top: 12px; }
+.ai-game-card dl { margin: 0; font-size: 13px; }
+.ai-game-card dt { font-weight: 700; color: #6b5417; }
+.ai-game-card dd { margin: 0; }
+.ai-game-controls > div { display: grid; grid-template-columns: minmax(8ch, 1fr) 1.35fr; gap: 8px; padding: 5px 0; border-bottom: 1px solid #efede4; }
+.ai-game-controls > div:last-child { border: 0; }
+.ai-game-process { list-style: none; display: grid; gap: 12px; padding: 0; margin: 0; }
+.ai-game-process > li { padding: 4px 0 8px 15px; border-left: 2px solid #d4ab30; }
+.ai-game-fixes { display: grid; gap: 12px; }
+.ai-game-fixes dl { display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 5px; }
+.ai-game-link { align-self: flex-start; color: #6b5417; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 700px) {
+  .ai-game-overview { grid-template-columns: 1fr; }
+  .hud-main-tabs > button { min-width: 0; }
+  .hud-main-tabs > button > span { white-space: nowrap; }
+}
+@media (max-width: 375px) {
+  .hud-main-tabs > button { gap: 2px; padding-inline: 4px; }
+  .hud-main-tabs > button .icon { width: 12px; }
+}
