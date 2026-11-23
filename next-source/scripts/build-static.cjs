@@ -9,6 +9,7 @@ async function main(){
  await fs.mkdir(path.join(stage,'app'),{recursive:true});
  for(const name of await fs.readdir(path.join(root,'app'))){const src=path.join(root,'app',name);if((await fs.stat(src)).isFile()&&name!=='page.js')await fs.copyFile(src,path.join(stage,'app',name));}
  await fs.mkdir(path.join(stage,'public','assets','media'),{recursive:true});
+ await fs.cp(path.join(root,'public','ai-game'),path.join(stage,'public','ai-game'),{recursive:true});
  let sharp;try{sharp=require('C:/Users/ggurljam/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp')}catch{}
  let contentFile=process.argv[2]?path.resolve(process.argv[2]):path.join(root,'data','content.json');
  if(!process.argv[2]){try{await fs.access(contentFile)}catch{contentFile=path.join(root,'content.json')}}
