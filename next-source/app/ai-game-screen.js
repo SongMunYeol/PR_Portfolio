@@ -2,7 +2,7 @@
 
 import {useContext, useRef, useState} from 'react';
 import {defaultAiGame} from './ai-game-content';
-import {EditableText, InlineContext} from './inline-edit';
+import {EditableText, InlineContext, uploadInlineImage} from './inline-edit';
 import {safeUrl} from './editor';
 import {staticMode} from './static-storage';
 
@@ -46,11 +46,14 @@ function ToolList({tools}) {
 }
 
 function MediaGallery({game, Image}) {
+  const {editing, update, notify, onPending} = useContext(InlineContext);
   const video = videoSource(game.videoUrl);
   const screenshots = game.screenshots.flatMap((entry, position) => imageUrl(entry.image) ?
     [{...entry, position, image: imageUrl(entry.image)}] : []);
   const items = video ? [{video, label: '게임 플레이 영상'}, ...screenshots] : screenshots;
   const [index, setIndex] = useState(0);
+  const [uploading, setUploading] = useState(false);
+  const [videoError, setVideoError] = useState('');
   const rail = useRef(null);
   const active = items.length ? index % items.length : 0;
   const item = items[active];
@@ -65,33 +68,97 @@ function MediaGallery({game, Image}) {
     }
   }
 
-  if (!item) return null;
+  function applyVideo(event) {
+    event.preventDefault();
+    const value = new FormData(event.currentTarget).get('videoUrl').trim();
+    if (value && !videoSource(value)) {
+      setVideoError('유효한 YouTube 링크 또는 HTTPS 영상 주소를 입력해 주세요.');
+      return;
+    }
+    setVideoError('');
+    update(['aiGame','videoUrl'],value);
+    select(0);
+  }
+
+  async function addScreenshot(event) {
+    const input = event.currentTarget;
+    const file = input.files[0];
+    input.value = '';
+    if (!file) return;
+    setUploading(true);
+    onPending?.(1);
+    try {
+      const image = await uploadInlineImage(file);
+      update(['aiGame','screenshots'],current => {
+        if (current.length >= 100) return current;
+        return [...current,{image,label:file.name.replace(/\.[^.]+$/,'')}];
+      });
+    } catch (error) {
+      notify(error.message);
+    } finally {
+      setUploading(false);
+      onPending?.(-1);
+    }
+  }
+
+  function removeScreenshot(entry, position) {
+    update(['aiGame','screenshots'],current => current.filter((_,index) => index !== entry.position));
+    setIndex(Math.max(0, Math.min(active - (position < active ? 1 : 0), items.length - 2)));
+  }
+
+  if (!item && !editing) return null;
   return <section className="bunker-gallery" aria-label="플레이 영상과 게임 캡처">
-    <figure className="bunker-stage">
-      {item.video?.embed ? (
+    {(item || editing) && <figure className="bunker-stage">
+      {item?.video?.embed ? (
         <iframe src={item.video.embed} title={item.label} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen/>
-      ) : item.video ? (
+      ) : item?.video ? (
         <video controls playsInline preload="metadata" aria-label={item.label} poster={imageUrl(game.image)} src={item.video.src}/>
-      ) : (
+      ) : item ? (
         <Image path={['aiGame','screenshots',item.position,'image']} src={item.image} alt={item.label}/>
-      )}
-    </figure>
-    {items.length > 1 && <div className="bunker-carousel" role="group" aria-label="게임 캡처 캐러셀"
+      ) : <span className="bunker-empty-media">영상 주소나 캡처를 추가해 주세요.</span>}
+    </figure>}
+    {editing && <form className="bunker-video-editor" onSubmit={applyVideo}>
+      <label htmlFor="bunker-video-url">플레이 영상 주소</label>
+      <div>
+        <input id="bunker-video-url" key={game.videoUrl} name="videoUrl" type="url" defaultValue={game.videoUrl}
+          placeholder="YouTube 링크 또는 MP4 / WebM 주소" onChange={() => setVideoError('')}/>
+        <button type="submit">적용</button>
+        {game.videoUrl && <button type="button" onClick={() => {
+          update(['aiGame','videoUrl'],'');
+          setVideoError('');
+          select(0);
+        }}>삭제</button>}
+      </div>
+      {videoError && <p role="alert">{videoError}</p>}
+    </form>}
+    {(items.length > 1 || (editing && items.length > 0)) && <div className="bunker-carousel" role="group" aria-label="게임 캡처 캐러셀"
       onKeyDown={event => {
         if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
         event.preventDefault();
         select(active + (event.key === 'ArrowRight' ? 1 : -1));
       }}>
-      <button className="bunker-arrow" type="button" aria-label="이전 미디어" onClick={() => select(active - 1)}>‹</button>
+      <button className="bunker-arrow" type="button" aria-label="이전 미디어" disabled={items.length<2} onClick={() => select(active - 1)}>‹</button>
       <div className="bunker-thumbnails" ref={rail}>
-        {items.map((entry, position) => <button key={position} type="button" aria-pressed={active === position}
-          aria-label={entry.label || '캡처 ' + (position + 1)} onClick={() => select(position)}>
-          <img src={entry.image || imageUrl(game.image) || undefined} alt=""/>
-          {entry.video && <span aria-hidden="true">▶</span>}
-        </button>)}
+        {items.map((entry, position) => {
+          const label = entry.label || '캡처 ' + (position + 1);
+          return <div className="bunker-thumb" key={entry.video ? 'video' : entry.position}>
+            <button className="bunker-thumb-select" type="button" aria-pressed={active === position}
+              aria-label={label} onClick={() => select(position)}>
+              {entry.image || imageUrl(game.image) ? <img src={entry.image || imageUrl(game.image)} alt=""/> : null}
+              {entry.video && <span aria-hidden="true">▶</span>}
+            </button>
+            {editing && !entry.video && <button className="bunker-thumb-delete" type="button"
+              aria-label={label + ' 삭제'} onClick={() => removeScreenshot(entry,position)}>×</button>}
+          </div>;
+        })}
       </div>
-      <button className="bunker-arrow" type="button" aria-label="다음 미디어" onClick={() => select(active + 1)}>›</button>
+      <button className="bunker-arrow" type="button" aria-label="다음 미디어" disabled={items.length<2} onClick={() => select(active + 1)}>›</button>
     </div>}
+    {editing && <label className="bunker-capture-add upload-control">
+      {uploading ? '캡처 등록 중…' : '+ 캡처 추가'}
+      <input type="file" accept="image/png,image/jpeg,image/webp,image/gif" aria-label="게임 캡처 추가"
+        disabled={uploading || game.screenshots.length >= 100} onChange={addScreenshot}/>
+    </label>}
   </section>;
 }
 

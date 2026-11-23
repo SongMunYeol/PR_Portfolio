@@ -2,6 +2,15 @@
 import {createContext,useContext,useRef,useState,useLayoutEffect} from 'react';
 import {staticMode,staticUpload} from './static-storage';
 export const InlineContext=createContext({editing:false});
+export async function uploadInlineImage(file){
+ if(staticMode)return staticUpload(file);
+ const data=new FormData();
+ data.append('file',file);
+ const response=await fetch('/api/upload',{method:'POST',body:data});
+ const result=await response.json();
+ if(!response.ok)throw Error(result.error);
+ return result.url;
+}
 export function EditableText({path,children,multiline=false}){
  const ctx=useContext(InlineContext),ref=useRef();
  useLayoutEffect(()=>{if(ctx.editing&&ref.current){if(multiline){ref.current.style.height='auto';ref.current.style.height=ref.current.scrollHeight+'px'}else if(document.activeElement!==ref.current)ref.current.textContent=String(children??'')}},[children,ctx.editing,multiline]);
@@ -13,5 +22,5 @@ export function EditableText({path,children,multiline=false}){
 export function EditableImage({path,children}){
  const ctx=useContext(InlineContext),[busy,setBusy]=useState(false);
  if(!ctx.editing||!path)return children;
- return <span className="inline-image">{children}<label className="inline-image-upload">{busy?'등록 중…':'이미지 변경'}<input aria-label={path.join('.')+' 이미지 변경'} type="file" accept="image/png,image/jpeg,image/webp,image/gif" disabled={busy} onChange={async e=>{const file=e.target.files[0];if(!file)return;setBusy(true);ctx.onPending?.(1);try{let url;if(staticMode)url=await staticUpload(file);else{const data=new FormData();data.append('file',file);const r=await fetch('/api/upload',{method:'POST',body:data});const value=await r.json();if(!r.ok)throw Error(value.error);url=value.url}ctx.update(path,url)}catch(error){ctx.notify(error.message)}finally{setBusy(false);ctx.onPending?.(-1);e.target.value=''}}}/></label></span>;
+ return <span className="inline-image">{children}<label className="inline-image-upload">{busy?'등록 중…':'이미지 변경'}<input aria-label={path.join('.')+' 이미지 변경'} type="file" accept="image/png,image/jpeg,image/webp,image/gif" disabled={busy} onChange={async e=>{const file=e.target.files[0];if(!file)return;setBusy(true);ctx.onPending?.(1);try{ctx.update(path,await uploadInlineImage(file))}catch(error){ctx.notify(error.message)}finally{setBusy(false);ctx.onPending?.(-1);e.target.value=''}}}/></label></span>;
 }

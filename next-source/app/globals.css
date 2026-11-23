@@ -186,11 +186,12 @@
 .bunker-carousel { display: flex; align-items: stretch; gap: 8px; margin-top: 9px; }
 .bunker-arrow { flex: 0 0 35px; border: 1px solid #d8d4c6; border-radius: 5px; background: #fffcf2; font-size: 26px; line-height: 1; }
 .bunker-thumbnails { position: relative; display: flex; flex: 1; gap: 8px; min-width: 0; overflow-x: auto; scrollbar-width: thin; }
-.bunker-thumbnails button { position: relative; flex: 0 0 clamp(84px, 20%, 152px); aspect-ratio: 16 / 9; border: 2px solid transparent; border-radius: 5px; background: #24261f; overflow: hidden; padding: 0; }
-.bunker-thumbnails button[aria-pressed="true"] { border-color: #bd8d25; }
-.bunker-thumbnails button:focus-visible { outline: 2px solid white; outline-offset: -4px; }
+.bunker-thumb { position: relative; flex: 0 0 clamp(84px, 20%, 152px); }
+.bunker-thumb-select { display:block; width:100%; position: relative; aspect-ratio: 16 / 9; border: 2px solid transparent; border-radius: 5px; background: #24261f; overflow: hidden; padding: 0; }
+.bunker-thumb-select[aria-pressed="true"] { border-color: #bd8d25; }
+.bunker-thumb-select:focus-visible { outline: 2px solid white; outline-offset: -4px; }
 .bunker-thumbnails img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.bunker-thumbnails span { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; }
+.bunker-thumb-select span { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; }
 .bunker-summary { display: grid; gap: 11px; }
 .bunker-title { display: grid; gap: 11px; }
 .bunker-title img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #26241d; border-radius: 7px; }
@@ -233,3 +234,18 @@
   .hud-main-tabs > button { gap: 2px; padding-inline: 4px; }
   .hud-main-tabs > button .icon { width: 12px; }
 }
+
+.bunker-stage .bunker-empty-media { display: grid; place-items: center; color: #eee; }
+.bunker-video-editor { margin-top: 9px; }
+.bunker-video-editor label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+.bunker-video-editor > div { display:flex; gap:5px; }
+.bunker-video-editor input {
+  flex:1; min-width:0; padding:6px 7px; border:1px solid #d8d4c6; border-radius:4px;
+}
+.bunker-video-editor button { background:#fff8e5; border:1px solid #d8d4c6; border-radius:4px; padding:4px 8px; white-space:nowrap; }
+.bunker-video-editor [role="alert"] { color:#8c3131; margin:4px 0 0; }
+.bunker-thumb-delete {
+  position:absolute; top:3px; right:3px; padding:0; width:24px; height:24px;
+  border:1px solid #fff9; border-radius:4px; background:#252e42; color:#fff; line-height:1;
+}
+.bunker-capture-add { display:inline-flex; margin-top:8px; }
