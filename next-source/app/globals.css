@@ -115,13 +115,19 @@
 
 /* Bunker Protecter portfolio */
 .bunker-screen {
-  overflow-y: auto;
-  scrollbar-width: thin;
-  overscroll-behavior: contain;
+  overflow: hidden;
   gap: 20px;
   color: #42433b;
 }
-.bunker-screen > * { flex-shrink: 0; }
+.bunker-screen > .bunker-tabs { flex: none; }
+.bunker-tab-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+  padding: 2px 3px 12px;
+}
 .bunker-screen h2,
 .bunker-screen h3,
 .bunker-screen p { margin: 0; }
@@ -140,7 +146,41 @@
 .bunker-tabs button[aria-selected="true"] { border-bottom-color: #a97812; background: #fff3ce; color: #433211; }
 .bunker-overview { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: start; }
 .bunker-gallery, .bunker-summary, .bunker-media-column { min-width: 0; }
-.bunker-tool-strip { display: grid; gap: 8px; margin-top: 16px; }
+.bunker-tool-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 10px 14px;
+  margin-top: 16px;
+}
+.bunker-tool-strip h3 { margin-bottom: 7px; }
+.bunker-download {
+  display: inline-grid;
+  grid-template-columns: auto 42px;
+  align-items: stretch;
+  justify-self: end;
+  border: 1px solid #252e42;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 43px;
+  padding: 0;
+  background: #252e42;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.bunker-download > span { display: grid; place-items: center; padding-inline: 14px; }
+.bunker-download > .bunker-download-icon { background: #192133; padding: 0; font-size: 19px; }
+.bunker-download:not(:disabled):hover { background: #34435f; }
+.bunker-download:disabled { opacity: .68; cursor: not-allowed; }
+.bunker-stage .inline-image > img { width: 100%; height: 100%; object-fit: contain; }
+.bunker-evidence .inline-image { width: 100%; }
+.bunker-evidence .image-placeholder { aspect-ratio: 16 / 9; }
+.bunker-step .inline-add-item { margin: 8px 0 0; }
+.bunker-screen dd, .bunker-screen p { white-space: pre-wrap; overflow-wrap: anywhere; }
 .bunker-stage { margin: 0; width: 100%; aspect-ratio: 16 / 9; background: #191b16; border-radius: 7px; overflow: hidden; }
 .bunker-stage > * { display: block; width: 100%; height: 100%; border: 0; object-fit: contain; }
 .bunker-carousel { display: flex; align-items: stretch; gap: 8px; margin-top: 9px; }
@@ -151,7 +191,6 @@
 .bunker-thumbnails button:focus-visible { outline: 2px solid white; outline-offset: -4px; }
 .bunker-thumbnails img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .bunker-thumbnails span { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; }
-.bunker-screen .bunker-caption { margin-top: 7px; color: #575950; font-size: 12px; }
 .bunker-summary { display: grid; gap: 11px; }
 .bunker-title { display: grid; gap: 11px; }
 .bunker-title img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #26241d; border-radius: 7px; }
@@ -177,7 +216,6 @@
 .bunker-evidence figure { margin: 0; }
 .bunker-evidence img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #26241d; border-radius: 4px; }
 .bunker-evidence figcaption { margin-top: 4px; font-size: 12px; }
-.ai-game-link { justify-self: start; color: #6b5417; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 980px) {
   .bunker-overview { grid-template-columns: minmax(0, 1fr); }
   .bunker-title { grid-template-columns: minmax(110px, 35%) minmax(0, 1fr); align-items: center; }

@@ -1,6 +1,8 @@
+import {defaultAiGame} from './ai-game-content';
 const mountain='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85';
 const images=['https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80','https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80','https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80'];
 export const defaultContent={
+ aiGame:defaultAiGame,
  profile:{name:'송문열',englishName:'SONG MUNYEOL',role:'신입 게임 기획자',headline:'플레이의 즐거움을 탐구하고,\n다음 경험을 설계합니다.',heroDescription:'좋아하는 마음에서, 이해하는 시선으로.\n게임의 재미를 구조로 풀어내는 신입 게임 기획자 송문열입니다.',heroImage:mountain,portrait:'',introTitle:'“왜 재미있을까?”라는 질문에서 시작합니다.',introduction:'플레이어가 다시 게임을 켜는 이유를 고민합니다. 캐릭터를 수집하고 성장시키는 과정에서 느끼는 성취감, 전투에서 선택이 만드는 차이를 관찰하고 기획의 언어로 정리합니다.\n\n작은 불편함도 놓치지 않는 관찰력과 끝까지 구조를 파고드는 태도로, 함께 더 좋은 플레이 경험을 만들고 싶습니다.',birth:'생년월일 입력 예정',phone:'연락처 입력 예정',email:'이메일 입력 예정',education:'학교 · 학과 입력 예정',specialties:'시스템 기획, 콘텐츠 기획, 모바일 수집형 RPG'},
  tools:[{name:'Excel',purpose:'데이터 정리 · 밸런스 테이블',logo:''},{name:'PowerPoint',purpose:'기획서 작성 · 아이디어 전달',logo:''},{name:'Notion',purpose:'자료 아카이빙 · 일정 관리',logo:'https://cdn.simpleicons.org/notion/23644d'},{name:'Figma',purpose:'UI 설계 · 프로토타이핑',logo:'https://cdn.simpleicons.org/figma/23644d'},{name:'Unity',purpose:'게임 구조 이해 · 구현 검토',logo:'https://cdn.simpleicons.org/unity/23644d'}],
  licenses:[{name:'자격증 정보 입력 예정',grade:'등급 입력 예정',date:'취득일 입력 예정',file:'',image:''}],
