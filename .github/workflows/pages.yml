@@ -49,7 +49,11 @@ jobs:
                 repo: context.repo.repo,
                 run_id: context.runId
               });
-              if (data.artifacts.some(artifact => artifact.name === artifactName)) return;
+              if (data.artifacts.some(artifact => artifact.name === artifactName)) {
+                // Pages can briefly lag behind the Actions artifact listing.
+                await new Promise(resolve => setTimeout(resolve, 30000));
+                return;
+              }
               await new Promise(resolve => setTimeout(resolve, 3000));
             }
             throw new Error('Deployment artifact was not available after waiting.');
