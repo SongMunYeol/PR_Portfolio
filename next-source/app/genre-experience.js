@@ -1,11 +1,54 @@
 'use client';
-import {useState,useEffect,useRef,useContext} from 'react';
-import {InlineContext,EditableText as E} from './inline-edit';
-export default function GenreExperience({content,section,Image}){
- const genre=content.genres[section],games=genre?.games||[],{editing,update}=useContext(InlineContext);
- const frame=useRef(null),firstSet=useRef(null);const [geometry,setGeometry]=useState({width:600,height:320,cycle:600,labelHeight:50});
- useEffect(()=>{const measure=()=>{const width=frame.current?.clientWidth||600,height=frame.current?.clientHeight||320,cycle=firstSet.current?.getBoundingClientRect().width||600,labelHeight=Math.ceil(Math.max(50,...Array.from(firstSet.current?.querySelectorAll('.game-library-card')||[],card=>Array.from(card.children).filter(child=>!child.classList.contains('game-library-image')).reduce((sum,child)=>sum+child.getBoundingClientRect().height,0)+(card.children.length-1)*parseFloat(getComputedStyle(card).rowGap||0))));setGeometry(old=>old.width===width&&old.height===height&&old.cycle===cycle&&old.labelHeight===labelHeight?old:{width,height,cycle,labelHeight})};const observer=new ResizeObserver(measure);if(frame.current)observer.observe(frame.current);if(firstSet.current)observer.observe(firstSet.current);measure();return()=>observer.disconnect()},[games.length,editing]);
- const looping=games.length>14&&!editing;
- const copies=!looping?1:Math.max(2,Math.ceil(geometry.width/Math.max(1,geometry.cycle))+1);
- return <section className="screen game-gallery-screen"><div className="screen-title"><span className="kicker">GAME LIBRARY / {String(section+1).padStart(2,'0')}</span><h2>{genre?<E path={['genres',section,'name']}>{genre.name}</E>:'게임 경험'}</h2></div><div className="game-rail-panel game-full-gallery"><div className="game-rail-heading"><span>TITLES <b>{String(games.length).padStart(2,'0')}</b></span>{editing&&genre&&<button className="rail-toggle" onClick={()=>update(['genres',section,'games'],[...games,{name:'새 게임',description:'',image:''}])}>+ 게임 추가</button>}</div><div className="game-rail-window" ref={frame} data-editing={editing} data-looping={looping} aria-label="게임 타이틀 캐러셀" tabIndex={0}><div className="game-carousel-track" style={{'--game-image-height':`${Math.max(80,(geometry.height-2*geometry.labelHeight-30)/2)}px`,'--carousel-frame-width':`${geometry.width}px`,'--game-card-width':`${Math.max(80,Math.min((geometry.width-60)/7,(geometry.height-(editing?190:130))/3))}px`,'--carousel-distance':`-${geometry.cycle}px`,'--cover-height':`${Math.max(45,Math.min(205,(geometry.height-(editing?190:130))/2))}px`,'--rail-duration':`${Math.max(12,Math.min(120,Number(content.game.carouselDuration)||28))}s`}}>{Array.from({length:copies},(_,copy)=><div className="game-carousel-set" ref={copy===0?firstSet:undefined} key={copy} aria-hidden={copy>0?true:undefined} inert={copy>0?true:undefined}>{games.map((game,index)=><article className="game-library-card" key={index}><div className="game-library-image"><Image path={copy===0?['genres',section,'games',index,'image']:undefined} src={game.image} alt={copy===0?game.name+' 표지':''}/></div>{editing&&<div className="inline-card-actions"><button disabled={index===0} aria-label={game.name+' 앞으로 이동'} onClick={()=>{const list=[...games];[list[index-1],list[index]]=[list[index],list[index-1]];update(['genres',section,'games'],list)}}>←</button><button disabled={index===games.length-1} aria-label={game.name+' 뒤로 이동'} onClick={()=>{const list=[...games];[list[index+1],list[index]]=[list[index],list[index+1]];update(['genres',section,'games'],list)}}>→</button><button aria-label={game.name+' 삭제'} onClick={()=>update(['genres',section,'games'],games.filter((_,i)=>i!==index))}>삭제</button></div>}<h3><E multiline path={['genres',section,'games',index,'name']}>{game.name}</E></h3>{(editing||String(game.playTime||'').trim())&&<p className="game-play-time">{editing?<input aria-label={game.name+' 플레이 타임'} placeholder="예: 1000h" value={game.playTime||''} onChange={event=>update(['genres',section,'games',index,'playTime'],event.target.value)}/>:game.playTime.trim()}</p>}</article>)}</div>)}</div></div>{!games.length&&<div className="hud-empty">등록된 게임이 없습니다. 항목 관리에서 게임을 추가해 주세요.</div>}</div></section>;
+
+import {useContext} from 'react';
+import {coversPerGenre} from './genre-catalog';
+import {InlineContext, EditableText} from './inline-edit';
+
+export default function GenreExperience({genres, indices, pageIndex, Image, onManageGenre}) {
+  const {editing, update, pendingUploads} = useContext(InlineContext);
+
+  return <section className="screen game-library-screen" key={pageIndex} aria-labelledby="game-library-title">
+    <h2 id="game-library-title" className="kicker">GAME LIBRARY / {String(pageIndex + 1).padStart(2, '0')}</h2>
+    <div className="game-library-grid">
+      {indices.map(genreIndex => {
+        const {name, games} = genres[genreIndex];
+        const gamesPath = ['genres', genreIndex, 'games'];
+        return <section className="game-genre-panel" key={genreIndex} aria-labelledby={`game-genre-${genreIndex}`}>
+          <h3 id={`game-genre-${genreIndex}`}>{name}</h3>
+          <div className="game-genre-collection">
+            <div className="game-genre-header">
+              <span>TITLES <b>{String(games.length).padStart(2, '0')}</b></span>
+              {editing && <div className="game-cover-actions">
+                <button type="button" disabled={pendingUploads > 0 || games.length >= 100} onClick={() => update(gamesPath, list => {
+                  const newGame = {name:'새 게임', image:'', playTime:'', description:''};
+                  return list.length < coversPerGenre ? [...list, newGame] : [newGame, ...list];
+                })}>+ 게임 추가</button>
+                <button type="button" disabled={pendingUploads > 0} onClick={() => onManageGenre(genreIndex)}>게임 관리</button>
+              </div>}
+            </div>
+            <div className="game-cover-grid">
+              {games.slice(0, coversPerGenre).map((game, index) => {
+                const path = [...gamesPath, index];
+                return <article className="game-cover-card" key={index}>
+                  <div className="game-cover-frame"><Image path={[...path, 'image']} src={game.image} alt={`${game.name} 표지`}/></div>
+                  {editing && <div className="game-cover-actions">
+                    {game.image && <button type="button" disabled={pendingUploads > 0} onClick={() => update([...path, 'image'], '')}>표지 삭제</button>}
+                    <button type="button" disabled={pendingUploads > 0} onClick={() => update(gamesPath, list => list.filter((_, position) => position !== index))}>게임 삭제</button>
+                  </div>}
+                  <h4><EditableText multiline path={[...path, 'name']}>{game.name}</EditableText></h4>
+                  {(editing || game.playTime?.trim()) && <div className="game-cover-note">
+                    <EditableText multiline path={[...path, 'playTime']} label="플레이 기록" placeholder="예: 1000h">{game.playTime}</EditableText>
+                  </div>}
+                  {(editing || game.description?.trim()) && <div className="game-cover-note">
+                    <EditableText multiline path={[...path, 'description']} label="게임 설명" placeholder="설명 입력 · Enter로 줄바꿈">{game.description}</EditableText>
+                  </div>}
+                </article>;
+              })}
+            </div>
+            {!games.length && <p className="game-cover-empty">등록된 게임 없음</p>}
+          </div>
+        </section>;
+      })}
+    </div>
+  </section>;
 }
