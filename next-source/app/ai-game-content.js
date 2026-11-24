@@ -95,3 +95,38 @@ export const aiGameModel = {
   ...defaultAiGame,
   stages: [{...stages[0], evidence: [screenshots[0]]}],
 };
+
+export function createAiGame(title = '새 AI 게임') {
+  return {
+    ...defaultAiGame,
+    sidebarTitle:title, title, tagline:'', image:'', meta:'', description:'',
+    facts:[], controls:'', tools:[], screenshots:[], stages:[],
+    downloadUrl:'', videoUrl:'', developmentIntro:'', buildTitle:'', buildDescription:'',
+  };
+}
+
+const duckVsDuck = {
+  ...createAiGame('Duck vs Duck'),
+  tagline: '상대를 쓰러뜨리고 오리알을 모으는 3대3 탑뷰 아레나',
+  meta: 'Windows · Unity · v0.2 프로토타입',
+  description: '오리 한 마리를 조종해 AI 팀원 두 마리와 함께 상대 팀에 맞섭니다. 상대가 떨어뜨린 오리알을 주워 팀 점수를 쌓습니다. 목표 수량에 먼저 도달하면 승리하고, 제한 시간 안에 목표에 도달한 팀이 없으면 점수가 높은 팀이 이깁니다. 동점이면 무승부입니다.',
+  facts: [
+    {label:'대전', description:'3대3 · 플레이어 1명과 AI 오리 5마리'},
+    {label:'장비', description:'장비는 공격 방식을 바꾸고, 쁘띠덕은 능력치에 영향을 줍니다.'},
+    {label:'아레나', description:'장애물과 건초를 활용해 이동 경로와 교전 위치를 선택합니다.'},
+  ],
+  controls: 'WASD 이동 · 마우스 왼쪽 공격 · 마우스 오른쪽 스킬 · Space 회피 · E 궁극기',
+  tools: defaultAiGame.tools.filter(({name}) => ['Codex','Claude','Notion','Unity'].includes(name)),
+  stages: [
+    {phase:'v0.1', title:'처치와 오리알 회수를 연결한 팀전', decision:'빠른 팀 대전을 위해 상대를 쓰러뜨리면 오리알이 떨어지고, 직접 주워야 점수를 얻는 규칙을 정했습니다.', work:'Notion에 승패 조건, 장비와 쁘띠덕 역할, 아레나 지형을 기록해 Claude에 초기 구현을 요청했습니다.', evidence:[]},
+    {phase:'v0.2', title:'상점 규칙과 한 판의 길이 조정', decision:'장비와 쁘띠덕을 별도 버튼에서 뽑는 대신, 1회·5회 버튼을 통해 두 종류가 확률에 따라 나오도록 요청했습니다.', work:'Claude는 목표가 10알일 때 자동 플레이가 16~28초 만에 끝났다고 보고했습니다. v0.2에서 목표를 20알, 부활 시간을 5초로 조정한 뒤 약 85초의 자동 플레이 결과와 PC 빌드 성공을 보고했습니다.', evidence:[]},
+    {phase:'v0.3', title:'AI 난이도와 화면 가독성 점검', decision:'AI 명중률과 연사 공격의 압박을 낮추고, 체력·공격력 표기 단위와 폰트·UI 간격을 조정하도록 요청했습니다.', work:'v0.3 수정 요청을 전달했습니다. 이 기록의 구현·빌드 확인 범위는 v0.2까지입니다.', evidence:[]},
+  ],
+};
+
+export const defaultAiGames = [defaultAiGame, duckVsDuck];
+
+// Older snapshots stored only Bunker Protecter. Keep their exact edited entry.
+export function getAiGames(content) {
+  return content.aiGames ?? (content.aiGame ? [content.aiGame, duckVsDuck] : defaultAiGames);
+}

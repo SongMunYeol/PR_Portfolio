@@ -1,10 +1,12 @@
 'use client';
 
-import {useContext, useRef, useState} from 'react';
+import {createContext, useContext, useRef, useState} from 'react';
 import {defaultAiGame} from './ai-game-content';
 import {EditableText, InlineContext, uploadInlineImage} from './inline-edit';
 import {safeUrl} from './editor';
 import {staticMode} from './static-storage';
+
+const AiGamePath = createContext([]);
 
 function imageUrl(value) {
   const url = safeUrl(value);
@@ -33,7 +35,8 @@ function videoSource(value) {
 }
 
 function Field({path, value, multiline = false}) {
-  return <EditableText path={['aiGame', ...path]} multiline={multiline}>{value}</EditableText>;
+  const basePath = useContext(AiGamePath);
+  return <EditableText path={[...basePath, ...path]} multiline={multiline}>{value}</EditableText>;
 }
 
 function ToolList({tools}) {
@@ -46,6 +49,7 @@ function ToolList({tools}) {
 }
 
 function MediaGallery({game, Image}) {
+  const basePath = useContext(AiGamePath);
   const {editing, update, notify, onPending} = useContext(InlineContext);
   const video = videoSource(game.videoUrl);
   const screenshots = game.screenshots.flatMap((entry, position) => imageUrl(entry.image) ?
@@ -76,7 +80,7 @@ function MediaGallery({game, Image}) {
       return;
     }
     setVideoError('');
-    update(['aiGame','videoUrl'],value);
+    update([...basePath,'videoUrl'],value);
     select(0);
   }
 
@@ -89,7 +93,7 @@ function MediaGallery({game, Image}) {
     onPending?.(1);
     try {
       const image = await uploadInlineImage(file);
-      update(['aiGame','screenshots'],current => {
+      update([...basePath,'screenshots'],current => {
         if (current.length >= 100) return current;
         return [...current,{image,label:file.name.replace(/\.[^.]+$/,'')}];
       });
@@ -102,7 +106,7 @@ function MediaGallery({game, Image}) {
   }
 
   function removeScreenshot(entry, position) {
-    update(['aiGame','screenshots'],current => current.filter((_,index) => index !== entry.position));
+    update([...basePath,'screenshots'],current => current.filter((_,index) => index !== entry.position));
     setIndex(Math.max(0, Math.min(active - (position < active ? 1 : 0), items.length - 2)));
   }
 
@@ -114,7 +118,7 @@ function MediaGallery({game, Image}) {
       ) : item?.video ? (
         <video controls playsInline preload="metadata" aria-label={item.label} poster={imageUrl(game.image)} src={item.video.src}/>
       ) : item ? (
-        <Image path={['aiGame','screenshots',item.position,'image']} src={item.image} alt={item.label}/>
+        <Image path={[...basePath,'screenshots',item.position,'image']} src={item.image} alt={item.label}/>
       ) : <span className="bunker-empty-media">영상 주소나 캡처를 추가해 주세요.</span>}
     </figure>}
     {editing && <form className="bunker-video-editor" onSubmit={applyVideo}>
@@ -124,7 +128,7 @@ function MediaGallery({game, Image}) {
           placeholder="YouTube 링크 또는 MP4 / WebM 주소" onChange={() => setVideoError('')}/>
         <button type="submit">적용</button>
         {game.videoUrl && <button type="button" onClick={() => {
-          update(['aiGame','videoUrl'],'');
+          update([...basePath,'videoUrl'],'');
           setVideoError('');
           select(0);
         }}>삭제</button>}
@@ -171,8 +175,9 @@ function DownloadGame({game}) {
 }
 
 function Overview({game, Image}) {
+  const basePath = useContext(AiGamePath);
   const {editing} = useContext(InlineContext);
-  return <div className="bunker-overview">
+  return <div className={'bunker-overview' + (!editing && !game.videoUrl && !game.screenshots.some(({image})=>imageUrl(image)) ? ' bunker-overview-no-media' : '')}>
     <div className="bunker-media-column">
       <MediaGallery game={game} Image={Image}/>
       <div className="bunker-tool-strip">
@@ -185,7 +190,7 @@ function Overview({game, Image}) {
     </div>
     <section className="bunker-summary" aria-label="게임 설명">
       <header className="bunker-title">
-        {(imageUrl(game.image) || editing) && <Image path={['aiGame','image']} src={imageUrl(game.image)} alt=""/>}
+        {(imageUrl(game.image) || editing) && <Image path={[...basePath,'image']} src={imageUrl(game.image)} alt=""/>}
         <div><h2><Field path={['title']} value={game.title}/></h2>
           <p><Field path={['tagline']} value={game.tagline}/></p></div>
       </header>
@@ -207,6 +212,7 @@ function Overview({game, Image}) {
 }
 
 function Development({game, Image}) {
+  const basePath = useContext(AiGamePath);
   const {editing, update} = useContext(InlineContext);
   return <div className="bunker-development">
     <header><h2><Field path={['developmentTitle']} value={game.developmentTitle}/></h2>
@@ -222,14 +228,14 @@ function Development({game, Image}) {
             <dt>AI 협업과 결과</dt><dd><Field path={[...path,'work']} value={work} multiline/></dd></dl>
           {(evidence.length > 0) && <div className="bunker-evidence">
             {evidence.map(({image,label}, position) => (imageUrl(image) || editing) && <figure key={position}>
-              <Image path={['aiGame',...path,'evidence',position,'image']} src={imageUrl(image)} alt={label}/>
+              <Image path={[...basePath,...path,'evidence',position,'image']} src={imageUrl(image)} alt={label}/>
               {(label || editing) && <figcaption><Field path={[...path,'evidence',position,'label']} value={label}/></figcaption>}
               {editing && <button type="button" className="inline-add-item" onClick={() =>
-                update(['aiGame',...path,'evidence'],evidence.filter((_,i)=>i!==position))}>이미지 삭제</button>}
+                update([...basePath,...path,'evidence'],evidence.filter((_,i)=>i!==position))}>이미지 삭제</button>}
             </figure>)}
           </div>}
           {editing && <button type="button" className="inline-add-item" disabled={evidence.length>=100} onClick={() =>
-            update(['aiGame',...path,'evidence'],[...evidence,{image:'',label:''}])}>{phase} 이미지 추가</button>}
+            update([...basePath,...path,'evidence'],[...evidence,{image:'',label:''}])}>{phase} 이미지 추가</button>}
         </div>
       </section>;
     })}
@@ -240,10 +246,10 @@ function Development({game, Image}) {
   </div>;
 }
 
-export default function AiGameScreen({content, Image}) {
+export default function AiGameScreen({content, gameIndex, Image}) {
   const [tab, setTab] = useState(0);
   const panel = useRef(null);
-  const game = content ?? defaultAiGame;
+  const game = content;
 
   function activate(index) {
     if (index === tab) return;
@@ -251,7 +257,8 @@ export default function AiGameScreen({content, Image}) {
     if (panel.current) panel.current.scrollTop = 0;
   }
 
-  return <article className="screen ai-game-screen bunker-screen">
+  if (!game) return <div className="hud-empty">등록된 AI 게임이 없습니다.</div>;
+  return <AiGamePath.Provider value={['aiGames',gameIndex]}><article className="screen ai-game-screen bunker-screen">
     <div className="bunker-tabs" role="tablist" aria-label={game.title + ' 상세'}>
       {[game.introTab,game.developmentTab].map((label,index) => <button key={index} type="button" id={'bunker-tab-' + index}
         role="tab" aria-selected={index === tab} aria-controls="bunker-tab-content" tabIndex={index === tab ? 0 : -1}
@@ -268,5 +275,5 @@ export default function AiGameScreen({content, Image}) {
     <div className="bunker-tab-content" ref={panel} role="tabpanel" id="bunker-tab-content" aria-labelledby={'bunker-tab-' + tab} tabIndex={0}>
       {tab === 0 ? <Overview game={game} Image={Image}/> : <Development game={game} Image={Image}/>}
     </div>
-  </article>;
+  </article></AiGamePath.Provider>;
 }

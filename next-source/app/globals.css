@@ -249,3 +249,11 @@
   border:1px solid #fff9; border-radius:4px; background:#252e42; color:#fff; line-height:1;
 }
 .bunker-capture-add { display:inline-flex; margin-top:8px; }
+
+.ai-game-add { margin: 10px; padding: 7px 10px; border: 1px solid #ddc682; border-radius: 5px; background: #fff5d9; font-weight: 700; }
+.ai-game-editor-list { display: grid; gap: 7px; margin-bottom: 14px; }
+.ai-game-editor-list select { min-width: 0; padding: 6px; }
+.ai-game-editor-actions { display: flex; flex-wrap: wrap; gap: 5px; }
+.ai-game-editor-actions button { padding: 5px 8px; border: 1px solid #ddd3b8; border-radius: 4px; background: #faf5e5; }
+.bunker-overview-no-media { grid-template-columns: minmax(0, 1fr); }
+.bunker-overview-no-media .bunker-summary { grid-row: 1; max-width: 72ch; }
